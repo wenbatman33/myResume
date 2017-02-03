@@ -1,0 +1,181 @@
+body {
+	background-color: #000000;
+	margin-left: 0px;	
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+.backword    { font-size: 11pt; color: #808080;text-decoration: none }
+
+.Coffee_color11_ {
+	font-size: 12px;
+	font-weight: normal;
+	color: #52301E;
+}
+
+a {
+	font-size: 11px;
+	font-weight: normal;
+	color: #FF0000;
+}
+
+
+a.copy{
+	font-size: 12px;
+	font-weight: normal;
+	color: #26aaaf;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a.copy:hover {
+	color: #EB4E45;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: underline;
+}
+
+.tablecss_c    { 
+	text-align: center; 
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px; 	
+	background-color: #000000;
+}
+
+.tablecss_l    { 
+	text-align: left; 
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px; 	
+	background-color: #000000;
+}
+
+.buttoncss    { 
+	text-align: center; 
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px; 
+	border: 1px solid #E0681B; 	
+	background-color: #2b2118;
+}
+
+.inputcss    { 
+
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px; 
+	border: 1px solid #E0681B; 		
+	background-color: #000000;
+}
+
+.firstrowcss { 
+	text-align: center; 
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px; 
+	border-style: groove; 
+	border-width: 1px; 
+	background-color: #6f4f32;	
+}
+
+.btnStyle{ 
+	cursor:hand; 
+} 
+
+.rentaltable    { 
+	text-align: left; 
+	color: #808000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px; 	
+	background-color: #EBE8D5;
+}
+
+.rentalinput    { 
+
+	color: #009999;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px; 
+	border: 1px solid #009999; 		
+	
+}
+
+.rentalinput2    { 
+
+	color: #666633;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px; 
+	border: 1px solid #666633; 		
+	
+}
+
+.a11Skin_color {
+	font-size: 11px;
+	font-weight: normal;
+	color: #E3C9B6;
+}
+
+.a_white_12 {
+	font-size: 12px;
+	line-height: 15px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+.a_pink_thickness_12 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #f29a76;
+}
+.a_blue_thickness_12 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #7ecef4;
+}
+.a_gold_11 {
+	font-size: 11px;
+	font-weight: normal;
+	color: #94774d;
+}
+
+.a_white_11 {
+	font-size: 11px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+.a_gray_thickness_12 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #362e2b;
+}
+.a_gray_11 {
+	font-size: 11px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #362e2b;
+}
+.a_orange_12 {
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #eb6100
+}
+.a_coffee_12 {
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #6a3905;
+
+
+}
+.a_black_12 {
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #000000;
+}
+.a_coffee_thickness_12 {
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: bold;
+	color: #3e2703;
+

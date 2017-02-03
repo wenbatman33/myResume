@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<travel>
+<Personal Note="個人_美食" Map="travel/travel_map_b.jpg"  Schedule="travel/2_2.jpg" Other="">
+	<Option_point jpg="travel/travel_b2_1.jpg"  x="344"  y="369">
+	<Comment><![CDATA[道頓堀<br>道頓堀是南部地區的一個標誌，也是大阪人所謂的"吃到倒"飲食文化的發源地。在道頓堀河邊擠滿了各種大大小小的飯店，巨大的招牌吸引著前來這兒品嘗美食的人們。]]></Comment>
+	<Link><![CDATA[http://www.dotonbori.or.jp/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_b2_2.jpg"  x="292"  y="400">
+	<Comment><![CDATA[難波KUISHINBO橫丁<br>難波KUISHINBO橫丁具備繁多大阪美味的美食城。在館內再現昭和40年代的大阪小鎮，更是洋溢著大阪食文化的歷史。在這裡代表關西食文化的老字號、原始老店互相競爭。光是走馬看花也讓人很興奮!]]></Comment>
+	<Link><![CDATA[http://www.walkerplus.com/mall/kuishinbo/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_b2_3.jpg"  x="341"  y="374">
+	<Comment><![CDATA[心齋橋<br>在御堂筋大街東面與之平行的心齋橋筋商店街是大阪最知名的購物區，也是大阪的一個永久性標誌。遠在江戶時期，這裏就已形成了購物商圈，距今已有380年的歷史。]]></Comment>
+	<Link><![CDATA[http://www.shinsaibashisuji.com/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_b2_4.jpg"  x="538"  y="85">
+	<Comment><![CDATA[京都車站<br>第一個車站是1877年建造的2層式紅磚瓦建築。大正初期改建為歐洲文藝復興的木造樣式，但於昭和時期被燒毀。作為車站建築是全國最大型的綜合設施。包括飯店，百貨商店，文化等設施。]]></Comment>
+	<Link><![CDATA[http://www.kyoto-station-building.co.jp/index.htm]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_b2_5.jpg"  x="356"  y="382">
+	<Comment><![CDATA[難波PARKS<br>2003年10月在原大阪球場的遺址上正式完工開幕，是一棟地下1層至地上8層的巨大複合型設施。設施內有在關西首次開設的店舖和餐廳、稱為圓形劇場的戶外活動空間、潺潺流水的頂樓庭園「帕克斯花園」等。]]></Comment>
+	<Link><![CDATA[http://www.nambaparks.com/index2.html]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_b2_6.jpg"  x="347"  y="383">
+	<Comment><![CDATA[美國村(歐洲村)<br>美國村自1970年起就已成為大阪年輕人聚集的地方。各種二手服裝店、雜貨鋪、咖啡館和藝術畫廊一間挨一間地排列著。這個地區由於30多年前開設了許多專賣各式美國進口商品的小店而得名。]]></Comment>
+	<Link><![CDATA[http://www.osaka-info.jp/ch_t/search/detail/sightseeing_2022.html]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_b2_7.jpg"  x="358"  y="390">
+	<Comment><![CDATA[日本橋電電街<br>在日本橋電電街原先是賣二手服裝和舊書的小店林立的小街區。變為電器街後，數十年時間裏成長為大阪具有代表性的繁華鬧市。一到休息日，堺筋大道的兩側人行道就被提著大包小包的人海所淹沒。]]></Comment>
+	<Link><![CDATA[http://www.denden-town.or.jp/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_b2_8.jpg"  x="341"  y="402">
+	<Comment><![CDATA[難波CITY<br>位於南海電鐵難波車站大樓，是地下2層至地上2層的寬廣購物商場。雲集了時尚品牌和流行商品名店、餐廳與咖啡廳等約300家店舖。]]></Comment>
+	<Link><![CDATA[http://www.nambacity.com/index.html]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_b2_9.jpg"  x="370"  y="386">
+	<Comment><![CDATA[天神橋筋商店街<br>這是日本最長的一條小商店街。在這條2.6公里長的商店街裏各類電影院和遊樂中心，總是吸引著有很多年輕人。商店街幾乎每天都舉行各種活動，這裏充滿了普通百姓日常的生活樂趣，別有一種"大阪風味"。]]></Comment>
+	<Link><![CDATA[http://www.tenjin123.com/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_b2_10.jpg"  x="346"  y="376">
+	<Comment><![CDATA[黑門市場<br>在明治末期以前，黑門市場曾被稱作"圓名寺市場"。因為那裏附近曾有一座叫圓名寺的大寺廟，便由此得名。而這座寺廟的東北邊的黑色大門又在當時特別出名，漸漸的"圓名寺市場"便成了現在的"黑門市場"。
+]]></Comment>
+	<Link><![CDATA[http://www.kuromon.com/]]></Link>
+	</Option_point>
+	</Personal>
+</travel>

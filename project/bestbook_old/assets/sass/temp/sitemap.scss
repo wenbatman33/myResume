@@ -1,0 +1,143 @@
+@import "../define/__init.scss";
+html, body{
+	font-family: NanumGothic,Dotum,AppleGothic,sans-serif;
+}
+.sitemap{
+	padding: 0 10px;
+	@media only screen and (min-width: 960px){
+		width: 960px;
+		margin: 0 auto;
+	}
+}
+
+h1{
+	margin: 30px 0 10px;
+	text-align: center;
+	font-size: 2em;
+	color: $dark_gray;
+	@media only screen and (max-width: 767px){
+		font-size: 1.3em;
+		margin-bottom: 20px;
+	}
+	.brand{
+		color: $blue;
+	}
+	.page{
+		font-size: 0.8em;
+		color: $gray;
+		margin-left: 10px;
+	}
+}
+
+.author{
+	text-align: right;
+	margin-bottom: 10px;
+	a{
+		text-decoration: underline;
+		&:hover{
+			position: relative;
+		}
+		&[title]:hover:after {
+			content: attr(title);
+			padding: 4px 8px;
+			color: white;
+			position: absolute;
+			right: 0;
+			top: 20px;
+			white-space: nowrap;
+			z-index: 20px;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			border-radius: 5px;
+			background: $blue;
+		}
+	}
+}
+
+.update{
+	text-align: right;
+	margin: 10px 0;
+}
+
+.site-table{
+	border: 1px solid $gray;
+	width: 100%;
+	line-height: 140%;
+	tr{
+		-webkit-transition: 0.3s;
+		transition: 0.3s;
+		&:not(:first-child):hover{
+			background: $light_gray;
+		}
+	}
+	th{
+		background: $light_gray;
+		color: $dark_gray;
+		padding: 10px;
+	}
+	td{
+		text-align: center;
+		padding: 10px;
+		font-size: 0.8em;
+		border-bottom: 1px solid $light_gray;
+	}
+	a{
+		color: gray;
+		text-decoration: underline;
+		display: block;
+		&:hover{
+			position: relative;
+		}
+		&[title]:hover:after {
+			content: attr(title);
+			padding: 4px 8px;
+			color: white;
+			position: absolute;
+			left: 0;
+			top: 20px;
+			white-space: nowrap;
+			z-index: 20px;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			border-radius: 5px;
+			background: black;
+		}
+	}
+	.no{}
+	.name{
+		text-align: left;
+	}
+	.update{
+		color: gray;
+	}
+	.state{
+		//padding-right: 50px;
+		position: relative;
+	}
+	.desc{
+	}
+	.percentage{
+		position: absolute;
+		right: 10px;
+		top: 0;
+	}
+}
+
+.progress-bar{
+	//-webkit-appearance: none;
+	//appearance: none;
+	width: 100%;
+	&::-webkit-progress-bar {
+		background: #eee;
+		border-radius: 2px;
+	}
+	&::-webkit-progress-value {
+		border-radius: 2px; 
+		background: $blue;
+	}
+}
+
+footer{
+	text-align: center;
+	padding: 20px;
+}

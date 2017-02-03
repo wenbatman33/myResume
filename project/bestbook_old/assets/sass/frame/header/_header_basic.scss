@@ -1,0 +1,107 @@
+.header-inn{
+    position: relative;
+    border-bottom: 1px solid $light_gray;
+    height: 80px;
+    background: white;
+    z-index: 5;
+    @include clearfix;
+    .logo{
+        float: left;
+        display: block;
+        padding: 12px 0;
+        img{
+            width: 155px;
+        }
+    }
+    .function{
+        position: relative;
+        float: right;
+        >.link{
+            position: relative;
+            display: inline-block;
+            padding: 13px 0;
+        }
+
+        .icon-cart, .icon-account, .icon-search, .icon-publish{
+            padding: 26px 15px;
+        }
+        .input-search{
+            -webkit-appearance: none;
+            height: 40px;
+            padding: 5px;
+            float: left;
+            border: none;
+            background: $light_gray;
+            margin: 20px 0px;
+            &:focus{
+                outline: none;
+            }
+        }
+        .icon-cart{
+            .count{
+                position: absolute;
+                top: 10px;
+                left: 20px;
+                font-size: 0.7em;
+                padding: 3px 5px;
+                font-weight: bold;
+                color: white;
+                background: $red;
+                font-family: Arial;
+                @include border-radius(50%);
+            }
+        }
+    }
+}
+
+
+@include setMediaQueries(pad){
+    .header-inn{
+        .logo{
+            padding-bottom: 5px;
+            margin-left: 10px;
+
+        }
+        .function{
+            >.link{
+            }
+            .input-search{
+                display: none;
+            }
+        }
+    }
+}
+
+@include setMediaQueries(phone){
+    .header-inn{
+        height: auto;
+        .logo{
+            padding-bottom: 5px;
+            margin-left: 10px;
+            img{
+                margin-top: 10px;
+                width: 110px;
+            }
+
+        }
+        .function{
+            >.link{
+            }
+            .icon-cart, .icon-account, .icon-search, .icon-publish{
+                padding: 26px 15px;
+            }
+            .icon-publish,.icon-cart{
+                display: none;
+            }
+            .input-search{
+                display: none;
+            }
+            .icon-cart{
+                .count{
+                    top: 10px;
+                    left: 13px;
+                }
+            }
+        }
+    }
+}

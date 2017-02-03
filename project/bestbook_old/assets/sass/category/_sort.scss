@@ -1,0 +1,70 @@
+.category-page{
+	.sort{
+		@include clearfix;
+		display: block;
+		margin-bottom: 30px;
+		li{
+			float: left;
+			display: block;
+			background: $light_gray;
+			padding: 6px 0;
+			cursor: pointer;
+			&:last-child{
+				a{
+					border-right: none;
+				}	
+			}
+			&.active{
+				background: $blue;
+				a{
+					color: #fff;
+				}
+			}
+			&:hover{
+				background: $bk_gray;
+				a{
+					color: $red;
+				}
+			}
+			a{
+				display: block;
+				border-right: 1px solid #ccc;
+				padding: 10px 36px;
+			}
+		}
+	}
+	.sortby-m{
+		display: none;
+	}
+	//desktop
+@media only screen and (min-width: $screen-lg-min) and (max-width: $screen-lg-max){
+	.sort{
+		li{
+			a{
+				padding: 10px 25px;
+			}
+		}
+	}
+}
+//table
+@media only screen and (min-width: $screen-md-min) and (max-width: $screen-md-max){
+	.sort{
+		li{
+			width: 19%;
+			padding: 16px 0;
+			text-align: center;
+		}
+	}
+}
+//tabel & mobile
+@media only screen and (max-width: $screen-md-max){
+	.sort{
+		display: none;
+	}
+	.sortby-m{
+		padding: 0 10px;
+		display: block;
+		margin-bottom: 20px;
+	}
+}
+}

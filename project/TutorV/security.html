@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="css/reset.css"/>
+<link rel="stylesheet" href="css/TutorV_Style.css"/>
+<link rel="stylesheet" href="css/TutorV_Font.css"/>
+<link rel="stylesheet" href="css/Grid.css"/>
+<link href="css/redmond/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/jquery.tinyscrollbar.min.js"></script>
+<script type="text/javascript" src="js/fancybox2.1.5/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript" src="js/fancybox2.1.5/source/jquery.fancybox.js?v=2.1.5"></script>
+<link rel="stylesheet" type="text/css" href="js/fancybox2.1.5/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+<script src="js/jquery.barrating.js"></script>
+<script type="text/javascript">
+$(function () {
+		var timer;
+		$('#example-f').barrating({ showSelectedRating:false });
+		$('.scrollBox_type1').tinyscrollbar();
+		var url = "video.html";
+		$(".videoBtn").click(function(){
+			$.fancybox({
+				width		: 1000,
+				height		: 800,
+				autoSize	: false,
+				closeClick	: true,
+				openEffect	: 'elastic',
+				closeEffect: 'elastic',
+				closeBtn: true,
+				closeClick:false,
+				hideOnOverlayClick:false,
+				autoScale : false,
+				type       :'iframe',
+				closeClick : false,
+				helpers : {overlay : {closeClick: false}},
+				beforeShow: function(){$(".fancybox-skin").css("backgroundColor","#999");},		
+				// other options
+				beforeLoad : function(){ this.href = url}
+			}); 
+		});
+		
+		var bNum=0;
+		var allNum=$('.albumUL li').length;
+	
+		$(".timelineUL li").click(function(){
+			var tempIndex=$( this).index( );
+			bNum=tempIndex
+			settingBanner(bNum);
+		});
+		
+		$("#leftBtn").click(function(){
+			bNum-=1;
+			if(bNum<0){
+				bNum=(allNum-1);
+			}
+			settingBanner(bNum);
+		});
+		
+		$("#rightBtn").click(function(){
+			bNum+=1 ;
+			if(bNum>=allNum){
+				bNum=0;
+			}
+			settingBanner(bNum);
+		});
+		function loop(){
+			bNum+=1 ;
+			if(bNum>=allNum){
+				bNum=0;
+			}
+			settingBanner(bNum);
+		}
+		
+		
+		function settingBanner(num){
+			var temp_date ="<div class=\"bannerTime margin_top40\">"+$(".albumUL li").eq(num).attr("data-Date")+"</div>";
+
+			var temp_time ="<div class=\"bannerTime color_orange\">"+$(".albumUL li").eq(num).attr("data-Time")+"</div>";
+			
+			$(".time").removeClass("color_orange");
+			$(".timelineUL li").eq(num).find(".time").addClass("color_orange");
+			$(".timelineOrange").stop().animate({ width: "0px" }, 0 );
+			
+			 window.clearTimeout(timer);
+ 			 //var millisecBeforeRedirect = 10000; 
+ 			 timer = window.setTimeout(function(){loop();},6000); 
+			 $(".timelineUL li").eq(num).find(".timelineOrange").stop().animate({ width: "130px" }, 6000 );
+			 
+			 
+			 
+			
+			var temp_Name =$(".albumUL li").eq(num).attr("data-Name");
+			var temp_teacher=$(".albumUL li").eq(num).attr("data-Teacher");
+			var str=temp_date+temp_time;
+			
+			var img =$(".albumUL li").eq(num).find('a');
+			$(".bannerDate").html(str);
+			$(".bannerClassName").html(temp_Name);
+			$(".bannerTeacherName").html(temp_teacher);
+			$(".bannerImg").animate({opacity: 0}, 200 );
+			
+			$(".bannerTime").stop().animate({left: "10px",opacity: 0}, 0 );
+			$(".bannerTime").stop().animate({left: "0px",opacity: 1}, 500 );
+			
+			
+			$(".bannerClassName").stop().animate({top: "-10px",opacity: 0}, 0 );
+			$(".bannerClassName").stop().delay(500).animate({top: "0px",opacity: 1}, 500 );
+			
+			$(".bannerTeacherName").stop().animate({top: "10px",opacity: 0}, 0 );
+			$(".bannerTeacherName").stop().delay(1000).animate({top: "0px",opacity: 1}, 500 );
+			
+			$(".bannerBtn").stop().animate({top: "350px",opacity: 0}, 0 );
+			$(".bannerBtn").stop().delay(1300).animate({top: "300px",opacity: 1}, 600, "easeOutBounce" );
+			
+			$(img).find('img').stop().animate({opacity: 1}, 500 );
+			
+			
+		}
+		settingBanner(0);
+		
+	
+		$.fn.extend({    
+			setup:function(){
+				var $block =$(this);
+				var $con =$block.find(".classes_List_warp");
+				var totalBox=$(this).find('.classes_ListBox').length,
+				nowNum=0,goingwidth=0,
+				timer, _Speed = 500;
+				$block.roll(0,totalBox);
+				$(this).find( ".left_arrowBtn2" ).click(function(){
+					nowNum-=1;
+					if(nowNum<=0){
+						nowNum=0;
+					}
+					$block.roll(nowNum);
+				});
+				$(this).find( ".right_arrowBtn2" ).click(function(){
+					nowNum+=1;
+					if(nowNum >= (totalBox-1)){
+						nowNum=totalBox-1;
+					}
+					$block.roll(nowNum,totalBox);
+				});
+				},roll:function(num,totalBox){
+					if(num<=0){
+						$(this).find('.left_arrowBtn2').hide();
+					}else{
+						$(this).find('.left_arrowBtn2').show();	
+					}
+					
+					if(num >= (totalBox-1)){
+						$(this).find('.right_arrowBtn2').hide();
+					}else{
+						$(this).find('.right_arrowBtn2').show();
+					}
+		
+					$(this).find(".classes_List_warp").stop().animate({"left":0-(num*960)}, 500);
+				}
+		});     
+		$("#classID_1").setup();
+		$("#classID_2").setup();
+		$("#classID_3").setup();
+});
+</script>
+</head>
+
+<!-- 載入時的燈箱頁面 start -->
+<a id="onLoadedPge" class="fancybox fancybox.iframe" href="popup.html" style=" display:none;" ></a>
+<!-- 載入時的燈箱頁面 end -->
+<body>
+<div class="coffee"></div>
+<div class="notebook"></div>
+<div class="container">
+    <div id="header" class="col11 margin_top20" > 
+        <a href="index.html"><div class="logo float_left "></div></a>
+        <div class="btnGroups">
+        <span class="color_white fontSize14">HI XXX，你好</span>
+        <span class=" inline_block color_white fontSize14 margin_right10">
+            <a class="fontSize14 color_white underline" href="#">編輯個人資料</a> 
+            <a class="fontSize14 color_white underline" href="#">登出</a>
+        </span> 
+        <a class="btn btn_Language" href="#">Language <b class="caret"></b></a> 
+        <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="#">English</a></li>
+                  <li><a tabindex="-1" href="#">Japanese</a></li>
+                  <li><a tabindex="-1" href="#">Portuguese</a></li>
+                  <li><a tabindex="-1" href="#">Spanish</a></li>
+        </ul>
+        </div>
+    </div>
+    <hr/>
+    <div class="col11 ">
+   		 <h1 class="title color_white">安全性條款</h1>
+      <div class="rules color_white lineHeight30 margin_top20">
+                    <p lingdex="0" class="color_lightGray">
+                        TutorV 會以適當的商業步驟並以合理之技術及程序，來確保您在 TutorV 中所做每一筆信用卡交易的安全。您可以放心的購買TutorV 所提供之服務，我們也不會同意讓他人看到您在我們網站上的交易情況。您的個人資料都會由Secure
+                        Sockets Layer （SSL）加密方式來處理，因此您的資料在網路上傳送時，是不會被任意攔截或讀取。</p>
+                    <p lingdex="1" class="color_lightGray">
+                        ＊TutorV 的安全性伺服器軟體對於在網路上的信用卡交易來說是最有用的。它會將您所有個人的資料都加密，包括您的姓名、信用卡號碼與地址等。</p>
+                    <p lingdex="2" class="color_lightGray">
+                        ＊如果您發現您的帳單出現不明消費時，那麼您必須依照您的信用卡公司所訂定的標準程序立即通知他們。在大部分的國家中，信用卡公司不能要求持卡人負擔超過規定的盜刷費用。如果您的信用卡公司發現不明消費款項是直接透過TutorV安全伺服器所產生，而您的信用卡公司拒絕承擔這些費用，則TutorV
+                        將會償還您最高規定的自付額。</p>
+                    <p lingdex="3" class="color_lightGray">
+                        ＊請記得，您在此處所透露的任何資料將成為公開資料。因此，在向任何人提供個人資料時應多加小心。</p>
+                    <p lingdex="4" class="color_lightGray">
+                        ＊在TutorV的網站資源中，如果有提供其它與學習有關之網站連結時，當您造訪這些網站，應遵守該隱私權政策及其它相關條款與規定。建議您在提供個人資料之前，請先閱讀這些網站的隱私權及相關聲明。</p>
+                    <p lingdex="5" class="color_lightGray">
+                        如果您對這個部分的條款有任何問題，或是對TutorV其他條款或做法有任何問題時，請與我們聯絡。</p>
+                </div>
+    </div>
+    
+    
+    
+    
+   <div class="footer col11 float_left color_white">
+     <hr/>
+    <span><a href="index.html" class=" color_white">首頁</a> | <a href="privacy.html" class=" color_white">隱私權政策</a> | <a href="security.html" class=" color_white">安全性條款</a> | <a href="service.html" class=" color_white">服務條款</a> </span> <span>© 2014 TutorGroup All Rights Reserved.</span>
+ </div>
+</div>
+</body>
+</html>

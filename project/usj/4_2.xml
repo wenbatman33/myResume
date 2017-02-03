@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<travel>
+<Personal Note="家族_美食" Map="travel/travel_map_d.jpg"  Schedule="travel/4_2.jpg" Other="">
+	<Option_point jpg="travel/travel_d2_1.jpg"  x="343"  y="373">
+	<Comment><![CDATA[黑門市場<br>在明治末期以前，黑門市場曾被稱作"圓名寺市場"。因為那裏附近曾有一座叫圓名寺的大寺廟，便由此得名。而這座寺廟的東北邊的黑色大門又在當時特別出名，漸漸的"圓名寺市場"便成了現在的"黑門市場"。
+]]></Comment>
+	<Link><![CDATA[http://www.kuromon.com/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_d2_2.jpg"  x="343"  y="366">
+	<Comment><![CDATA[道頓堀<br>道頓堀是南部地區的一個標誌，也是大阪人所謂的"吃到倒"飲食文化的發源地。在道頓堀河邊擠滿了各種大大小小的飯店，巨大的招牌吸引著前來這兒品嘗美食的人們。]]></Comment>
+	<Link><![CDATA[http://www.dotonbori.or.jp/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_d2_3.jpg"  x="290"  y="399">
+	<Comment><![CDATA[難波KUISHINBO橫丁<br>難波KUISHINBO橫丁具備繁多大阪美味的美食城。在館內再現昭和40年代的大阪小鎮，更是洋溢著大阪食文化的歷史。在這裡代表關西食文化的老字號、原始老店互相競爭。光是走馬看花也讓人很興奮!]]></Comment>
+	<Link><![CDATA[http://www.walkerplus.com/mall/kuishinbo/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_d2_4.jpg"  x="110"  y="377">
+	<Comment><![CDATA[FISHERMAN MARKET美食饗宴<br>在若大的海灣景觀餐廳內，望見緩緩而行的船隻，與在港灣邊相互交錯而過的旅人，伴著飛翔的海鷗，彷彿到了另一個世界。餐廳內和、洋、中各式各樣的菜色，從石窯現烤的PIZZA開始、PASTA義大利麵、燒肉、海鮮串燒、壽司、沙拉吧、水果吧、甜點，50道以上的料理，讓您一次品嚐！]]></Comment>
+	<Link><![CDATA[http://www.create-restaurants.co.jp/shop/00030-1.28.0.0.0.0.0.0.2]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_d2_5.jpg"  x="351"  y="388">
+	<Comment><![CDATA[千日前道具屋筋商店街<br>專賣大阪美食料理器具的商店街。在這裡可以便宜買到家庭餐具和廚房用品。擬真程度百分百的大阪名產「章魚燒」鑰匙圈，最適合送禮。]]></Comment>
+	<Link><![CDATA[http://www.doguyasuji.or.jp/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_d2_6.jpg"  x="337"  y="372">
+	<Comment><![CDATA[心齋橋<br>在御堂筋大街東面與之平行的心齋橋筋商店街是大阪最知名的購物區，也是大阪的一個永久性標誌。遠在江戶時期，這裏就已形成了購物商圈，距今已有380年的歷史。]]></Comment>
+	<Link><![CDATA[http://www.shinsaibashisuji.com/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_d2_7.jpg"  x="535"  y="85">
+	<Comment><![CDATA[京都車站<br>第一個車站是1877年建造的2層式紅磚瓦建築。大正初期改建為歐洲文藝復興的木造樣式，但於昭和時期被燒毀。作為車站建築是全國最大型的綜合設施。包括飯店，百貨商店，文化等設施。]]></Comment>
+	<Link><![CDATA[http://www.kyoto-station-building.co.jp/index.htm]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_d2_8.jpg"  x="345"  y="381">
+	<Comment><![CDATA[美國村(歐洲村)<br>美國村自1970年起就已成為大阪年輕人聚集的地方。各種二手服裝店、雜貨鋪、咖啡館和藝術畫廊一間挨一間地排列著。這個地區由於30多年前開設了許多專賣各式美國進口商品的小店而得名。]]></Comment>
+	<Link><![CDATA[http://www.osaka-info.jp/ch_t/search/detail/sightseeing_2022.html]]></Link>
+	</Option_point>
+	</Personal>
+</travel>

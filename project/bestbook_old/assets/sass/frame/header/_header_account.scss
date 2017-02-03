@@ -1,0 +1,79 @@
+.header-inn{
+	.account-item{
+		position: absolute;
+        top: 100%;
+        right: 0;
+        border: 2px solid $green;
+        width: 150px;
+        background: white;
+        padding: 0 10px;
+        z-index: 3;
+        @include box-sizing(border-box);
+        a{
+        	display: block;
+        	padding: 10px;
+        	font-size: 0.9em;
+        	&:hover{
+                background: $light_gray;
+            }
+        }
+        li + li{
+        	border-top: 1px solid $light_gray;
+        }
+        &:before{
+            position: absolute;
+        }
+	}
+}
+
+@include setMediaQueries(pad){
+    .header-inn{
+        .account-item{
+            position: fixed;
+            top: 55px;
+            right: 0;
+            width: 200px;
+            border: none;
+            border: 2px solid $light_gray;
+            li{
+                float: none;
+                a{
+                    display: block;
+                    padding: 10px;
+                    &:first-child{
+                        padding-left: 10px;
+                    }
+                }
+            }
+            &:before{
+                display: none;
+            }
+        }
+    }
+}
+
+@include setMediaQueries(phone){
+    .header-inn{
+        .account-item{
+            position: fixed;
+            top: 55px;
+            right: 0;
+            width: 200px;
+            border: none;
+            border: 2px solid $light_gray;
+            li{
+                float: none;
+                a{
+                    display: block;
+                    padding: 10px;
+                    &:first-child{
+                        padding-left: 10px;
+                    }
+                }
+            }
+            &:before{
+                display: none;
+            }
+        }
+    }
+}

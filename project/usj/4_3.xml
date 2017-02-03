@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<travel>
+<Personal Note="家族_娛樂" Map="travel/travel_map_d.jpg"  Schedule="travel/4_3.jpg" Other="">
+	<Option_point jpg="travel/travel_d3_1.jpg"  x="299"  y="364">
+	<Comment><![CDATA[日本環球影城® <br>各具特色的9大區域，加上以電影和漫畫為主題的遊樂設施和表演。不僅景點特殊，還有餐廳和商店、街頭表演（street performance）。各式各樣的街道風景和五花八門的當紅電影卡通明星，期待各位來欣賞。從孩子到大人，主題樂園洋溢著讓您體驗到"神奇"又令人感動的"夢"。]]></Comment>
+	<Link><![CDATA[http://www.usj.tw/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_d3_2.jpg"  x="371"  y="366">
+	<Comment><![CDATA[水上巴士<br>搭乘"水上巴士"您可以遊覽整個"水都‧大阪" 。水上巴士每天行駛,整個航程大約1小時,途中經過大阪城、中之島、OBP（大阪商務園區）、以及OAP(大阪娛樂廣場)等大阪主要的觀光景點。此外根據季節不同,還有很多特別活動。比如夏天的"生啤節"等就是其中之一。]]></Comment>
+	<Link><![CDATA[http://suijo-bus.jp/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_d3_3.jpg"  x="294"  y="238">
+	<Comment><![CDATA[日清泡麵發明紀念館<br>1958年，世界最早的泡麵—雞味拉麵在大阪池田誕生。本紀念館就設在這一泡麵發祥之地，於1999年正式開業。在"手工雞味拉麵製作作坊"(收費、需要預約)，客人可以從揉麵工序開始自己動手做雞肉拉麵。]]></Comment>
+	<Link><![CDATA[http://www.nissin-noodles.com/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_d3_4.jpg"  x="160"  y="282">
+	<Comment><![CDATA[有馬溫泉<br>位於有馬溫泉的發祥地，引入被稱為「赤湯」的「金泉」而建的溫泉，於平成14年(2002年)12月開始營業。可體會1400年之歷史給您的感覺。 ]]></Comment>
+	<Link><![CDATA[http://www.arima-onsen.com/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_d3_5.jpg"  x="513"  y="81">
+	<Comment><![CDATA[八橋庵<br>親自感受古京都職人氣分， DIY親手創作出各種不同造型的京和菓子，享受DIY京都傳統和菓子體驗之樂趣。]]></Comment>
+	<Link><![CDATA[http://yatuhasian.jp/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_d3_6.jpg"  x="288"  y="396">
+	<Comment><![CDATA[有馬玩具博物館<br>這裏展示有約達4000件「好玩的玩具」，共佔4層樓。還設有觸摸專區，可以實際觸摸，有德國傳統的玩具模型、現代玩具、活動偶人、鐵皮玩具等。]]></Comment>
+	<Link><![CDATA[http://www.arima-toys.jp/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_d3_7.jpg"  x="237"  y="265">
+	<Comment><![CDATA[手塚治虫紀念館<br>手塚治虫被視為日本漫畫之父，很年輕就展現出漫畫的才能，小，而在十八歲出版他的漫畫處女作，從此展開他數百部作品（動畫、漫畫）的燦爛生涯。為後來的漫畫家開創了許多漫畫的典範。紀念館於1994年4 月誕生於兵庫縣寶塚市。]]></Comment>
+	<Link><![CDATA[http://www.city.takarazuka.hyogo.jp/tezuka/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_d3_8.jpg"  x="118"  y="353">
+	<Comment><![CDATA[北野異人館～荷蘭香料之家<br>在這裡香水師會依照您的喜好、個性等來調出屬於您的個人香水。還可以體驗穿著荷蘭服拍下紀念照。]]></Comment>
+	<Link><![CDATA[http://www.orandakan.shop-site.jp/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_d3_9.jpg"  x="133"  y="391">
+	<Comment><![CDATA[UCC咖啡博物館<br>能了解所有與咖啡有關的知識的博物館。從咖啡的歷史直至咖啡的燒制方法,所展示的內容包羅萬象。 ]]></Comment>
+	<Link><![CDATA[http://www.ucc.co.jp/museum/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_d3_10.jpg"  x="287"  y="391">
+	<Comment><![CDATA[大阪章魚燒博物館<br>對章魚燒很挑剔的大阪人打保票向大家推薦的著名章魚燒店一下子聚集了五家。並且除了品嘗章魚燒之外，還展示和介紹章魚燒的歷史和來源以及各種用具。更有土特產、章魚燒商品、廟會遊戲和文娛活動。本館是各種章魚燒的食品主題樂園。 ]]></Comment>
+	<Link><![CDATA[http://www.ucw.co.jp/otm/]]></Link>
+	</Option_point>
+</Personal>
+</travel>

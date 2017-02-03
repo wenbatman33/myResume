@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<travel>
+<Couples Note="情侶_美食" Map="travel/travel_map_a.jpg"  Schedule="travel/1_2.jpg" Other="">
+	<Option_point jpg="travel/travel_a2_1.jpg"  x="211"  y="378">
+	<Comment><![CDATA[豪華郵輪LUMINOUS號<br>是國內規模最大的餐廳式游船。穿越明石海峽大橋正下方時的那份感動真是令人難忘! ]]></Comment>
+	<Link><![CDATA[http://www.feel-kobe.jp/traditional/sightseeing/harbor4.html]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_a2_2.jpg"  x="216"  y="372">
+	<Comment><![CDATA[神戶海上愛之船<br>浪漫巡航，盡覽明石海峽大橋風光。來自香港，榮獲中華料理界最高榮譽「中國烹飪大師」美名的「鍾戚榮」主廚發揮嶄新創意再現廣東料理新風貌，讓您在船上也能享受中菜西吃與鐵板燒的美味。 ]]></Comment>
+	<Link><![CDATA[http://www.kobeconcerto.com/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_a2_3.jpg"  x="225"  y="366">
+	<Comment><![CDATA[STEAK AOYAMA <br>1963年創業的STEAK AOYAMA。店內的精選菜單神戶鐵板燒和牛質非常好，入口即化。]]></Comment>
+	<Link><![CDATA[http://www.steakaoyama.com/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_a2_4.jpg"  x="238"  y="358">
+	<Comment><![CDATA[摩薩克美食購物<br>位於臨海樂園海邊的綜合性商業樂園。餐廳,商場,影院及小型娛樂設施「馬賽克花園」令您流連忘返。]]></Comment>
+	<Link><![CDATA[http://www.kobe-mosaic.co.jp/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_a2_5.jpg"  x="459"  y="393">
+	<Comment><![CDATA[難波PARKS<br>2003年10月在原大阪球場的遺址上正式完工開幕，是一棟地下1層至地上8層的巨大複合型設施。設施內有在關西首次開設的店舖和餐廳、稱為圓形劇場的戶外活動空間、潺潺流水的頂樓庭園「帕克斯花園」等。]]></Comment>
+	<Link><![CDATA[http://www.nambaparks.com/index2.html]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_a2_6.jpg"  x="451"  y="391">
+	<Comment><![CDATA[美國村(歐洲村)<br>美國村自1970年起就已成為大阪年輕人聚集的地方。各種二手服裝店、雜貨鋪、咖啡館和藝術畫廊一間挨一間地排列著。這個地區由於30多年前開設了許多專賣各式美國進口商品的小店而得名。]]></Comment>
+	<Link><![CDATA[http://www.osaka-info.jp/ch_t/search/detail/sightseeing_2022.html]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_a2_7.jpg"  x="443"  y="382">
+	<Comment><![CDATA[心齋橋<br>在御堂筋大街東面與之平行的心齋橋筋商店街是大阪最知名的購物區，也是大阪的一個永久性標誌。遠在江戶時期，這裏就已形成了購物商圈，距今已有380年的歷史。]]></Comment>
+	<Link><![CDATA[http://www.shinsaibashisuji.com/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_a2_8.jpg"  x="640"  y="93">
+	<Comment><![CDATA[京都車站<br>第一個車站是1877年建造的2層式紅磚瓦建築。大正初期改建為歐洲文藝復興的木造樣式，但於昭和時期被燒毀。作為車站建築是全國最大型的綜合設施。包括飯店，百貨商店，文化等設施。]]></Comment>
+	<Link><![CDATA[http://www.kyoto-station-building.co.jp/index.htm]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_a2_9.jpg"  x="444"  y="411">
+	<Comment><![CDATA[難波CITY<br>位於南海電鐵難波車站大樓，是地下2層至地上2層的寬廣購物商場。雲集了時尚品牌和流行商品名店、餐廳與咖啡廳等約300家店舖。]]></Comment>
+	<Link><![CDATA[http://www.nambacity.com/index.html]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_a2_10.jpg"  x="448"  y="378">
+	<Comment><![CDATA[道頓堀<br>道頓堀是南部地區的一個標誌，也是大阪人所謂的"吃到倒"飲食文化的發源地。在道頓堀河邊擠滿了各種大大小小的飯店，巨大的招牌吸引著前來這兒品嘗美食的人們。]]></Comment>
+	<Link><![CDATA[http://www.dotonbori.or.jp/]]></Link>
+	</Option_point>
+</Couples>
+</travel>

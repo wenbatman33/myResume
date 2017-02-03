@@ -1,0 +1,18 @@
+<script>
+function uploadCheck()
+{
+	if (document.upload.file01.value == "")
+			alert("文件名不能為空！");
+	else
+			document.upload.submit();
+}
+</script>
+
+
+<body>
+
+<form method="post" name="upload" action="upload.asp" enctype="multipart/form-data">
+	文件名：<input type=file size=50 name="file01"><br>
+	說明：<input type=text size=50 name="disc1"><p>
+	<input type=button value="upload now!" onclick="uploadCheck()">
+</form>

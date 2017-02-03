@@ -1,0 +1,180 @@
+.category-page{
+	.filter{
+		margin-right: 20px;
+		font-size: 0.813em;
+		line-height: 250%;
+		margin-bottom: 20px;
+		.red{
+			color: $red;
+			padding: 0 10px;
+		}
+		h1{
+			line-height: 200%;
+			font-size: 1.2em;
+			color: #000;
+			padding-left: 20px;
+		}
+		p{
+			font-size: 0.9em;
+			color: #000;
+			margin-bottom: 15px;
+			padding-left: 20px;
+			a{
+				color: $blue;
+				text-decoration: underline;
+			}
+		}
+		.column{
+			position: relative;
+			border: 1px solid $light_gray;
+			border-top: none;
+			@include clearfix;
+			&:first-child{
+				border-top: 1px solid $light_gray;
+			}
+			.filter-tpye{
+				width: 110px;
+				text-align: right;
+				float: left;
+			}
+			.filter-content{
+				float: left;
+				width: 900px;
+				padding-left: 10px;
+				@include box-sizing(border-box);
+			}
+			.all{
+				display: inline-block;
+				vertical-align: middle;
+				cursor: pointer;
+				background: #b7d6ea;
+				line-height: 140%;
+				margin-right: 20px;
+			}
+			.type{
+				width: 65px;
+				margin-right: 0;
+			}
+			label{
+				display: inline-block;
+	    		cursor: pointer;
+	    		text-overflow: ellipsis;
+	    		white-space: nowrap;
+	    		min-width: 110px;
+			}
+			input[type="checkbox"]{
+				margin-left: 0;
+			}
+			input[type="text"] {
+	    		margin: 0;
+	    		padding: 0;
+	    		vertical-align: middle;
+	    		width: 70px;
+	    		height: 22px;
+	    		margin: 0 5px;
+			}
+			input[type="submit"]{
+				border: 1px solid $light_gray;
+			}
+			.expand{
+				position: absolute;
+				top: 0px;
+				right: 0px;
+				color: $blue;
+				
+				margin-right: 10px;
+				text-decoration: underline;
+			}
+		}
+	}
+	.result{
+		font-size: 1.8em;
+		line-height: 140%;
+		text-align: center;
+		color: #000;
+		margin: 2em 0;
+		padding: 0 10px;
+	}
+	.filter-m{
+		display: none;
+	}
+//large desktop
+@media only screen and (min-width: $screen-lg-min) and (max-width: $screen-lg-max){
+	.filter{
+		.column{
+			.filter-content{
+				width: 670px;
+			}
+		}
+	}
+}
+
+//pad
+@media only screen and (min-width: $screen-md-min) and (max-width: $screen-md-max){
+	
+}
+//pad & mobile
+@media only screen and (max-width: $screen-md-max){
+		.filter{
+			display: none;
+		}
+		.filter-m{
+			display: block;
+			padding: 0 10px;
+			@include clearfix;
+			
+			h1, p{
+				padding-left: 10px;
+				line-height: 140%;
+			}
+			p{
+				margin-bottom: 30px;
+			}
+			select{
+				width: 49%;
+				float: left;
+				&:nth-child(even){
+					float: right;
+				}
+			}
+		}
+}
+//mobile
+@media only screen and (max-width: $screen-sm-max){
+	.filter-m{
+		h1, p{
+			margin:0 10px;
+		}
+		h1{
+			margin-bottom: 10px;
+		}
+		.col-4{
+			width: 50%;
+		}
+		.column{
+			width: 75%;
+		}
+	}
+}
+@media only screen and (max-width: 320px){
+	.filter{
+		.column{
+			.filter-tpye{
+				width: 18%;
+			}
+		}
+	}
+	.filter-m{
+		.col-4{
+			.column{
+				padding: 10px;
+			}
+		}
+		.column{
+			input[type="text"] {
+				width: 25%;
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<travel>
+<Personal Note="個人_著名" Map="travel/travel_map_b.jpg"  Schedule="travel/2_4.jpg" Other="">
+	<Option_point jpg="travel/travel_b4_1.jpg"  x="281"  y="399">
+	<Comment><![CDATA[天保山海遊館<br>世界上最大規模的海洋水族館之一的大阪水族館----"海遊館"。這裏集中了近580種數以萬計的太平洋沿岸的海洋生物。調皮伶俐的水獺,憨態可掬的企鵝,還有色彩奇異的水母…無不讓你驚歎這海底世界的奇妙和大自然的偉大！]]></Comment>
+	<Link><![CDATA[http://www.kaiyukan.com/index.html]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_b4_2.jpg"  x="126"  y="364">
+	<Comment><![CDATA[布引香草花園<br>種有200多種四季特有的藥草。看看花草,增長知識,舒展身心,這裡是芳香漫溢的自然庭園。 ]]></Comment>
+	<Link><![CDATA[http://www.shinkoberopeway.com/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_a1_6.jpg"  x="472"  y="81">
+	<Comment><![CDATA[龜岡小火車<br>一段富有古典風味的鐵路之旅，由龜岡車站出發沿著景色宜人的保津川峽到嵐山車站，沿途的風景明媚動人情調極佳，日本人將之稱為羅曼蒂克鐵路，遊客可透過車窗觀賞保津峽和保津川的美麗自然風光，山谷之間的桂川安祥寧靜，為京都不分四季人潮絡繹不絕的觀光據點。]]></Comment>
+	<Link><![CDATA[http://www.sagano-kanko.co.jp/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_a1_3.jpg"  x="347"  y="402">
+	<Comment><![CDATA[通天閣<br>通天閣重建於第二次世界大戰後,可以說是一座新建築。它最早建於1912年，當初落成時，當地人都為它64米的高度而震驚，它也是當時東方各國的建築物中最高的。]]></Comment>
+	<Link><![CDATA[http://www.tsutenkaku.co.jp/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_a1_4.jpg"  x="550"  y="100">
+	<Comment><![CDATA[清水寺<br>木造千年古寺，建於西元798年，是平安時代之代表建築物。本寺因寺中清水而得名，順著奧院的石階而下就是音羽瀑布，清泉一分為三，分別代表「長壽」、「健康」及「智慧」，來此參拜的遊客路經此地一定會來喝上一口水，據說可預防疾病及災厄。]]>		</Comment>
+	<Link><![CDATA[http://www.kiyomizudera.or.jp/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_a1_10.jpg"  x="556"  y="78">
+	<Comment><![CDATA[平安神宮<br>建於1895年。為紀念遷都京都1100年時作為市民參拜的總社建立。供奉恒武，孝明兩位天皇。模仿平安京大内裏正廳的應天門，大極殿等均為朱漆建築，美麗非凡。神苑（名勝）是占地大約3萬平方米的池泉迂回式庭園，分為東、中、西、南四苑，種有四季鮮花，極盡風情。]]></Comment>
+	<Link><![CDATA[http://www.heianjingu.or.jp/]]></Link>
+	</Option_point>
+	</Personal>
+</travel>

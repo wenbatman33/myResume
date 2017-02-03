@@ -1,0 +1,192 @@
+//
+// .button
+// .button.gray
+// .button.large
+// .button.medium   // shadow style
+// .button.small
+// .button.disabled
+//
+.button {
+    //default button style
+    cursor: pointer;
+    -webkit-appearance: none;
+    font-size: 16px;
+    color: #1176bc;
+    text-decoration: none;
+    white-space: nowrap;
+    width: auto;
+    text-align: center;
+    line-height: 25px;
+    height: 26px;
+    border: 1px solid $dark_blue;
+    padding: 0 0.5em;
+    margin: 0;
+    @include user-select;
+    @include inline-block;
+    @include box-sizing(border-box);
+    &:hover {
+        color: white;
+        text-decoration: none;
+        background: #1176bc;
+    }
+    &.disabled, &[disabled] {
+        cursor: default;
+    }
+    &[type=reset], &[type=button], &[type=submit] {
+        font-family: inherit;
+        border: 0 none;
+        margin: 0;
+    }
+    //active/pressed
+    &:active, &.pressed {
+        background: $dark_blue;
+        &.large {
+        }
+    }
+    //default button large style
+    &.large {
+        font-size: 16px;
+        padding: 0 1.1em;
+        height: 36px;
+        letter-spacing: 3px;
+        line-height: 36px;
+        @include box-sizing( border-box );
+        &.disabled, &[disabled] {
+        }
+        &:active, &.pressed {
+        }
+    }
+    &.full{
+        background: $blue;
+        border: none;
+        color: white;
+    }
+    //end
+
+    // red button style
+    &.red {
+        background: white;
+        color: $red;
+        border: 1px solid $red;
+        &:hover {
+            background: $light_red;
+        }
+        &.disabled, &[disabled] {
+        }
+        &.large {
+            &.disabled, &[disabled] {
+            }
+        }
+        // active/pressed
+        &:active, &.pressed {
+            background: $dark_red;
+            &.large {
+            }
+        }
+        &.full{
+            background: $red;
+            color: white;
+            border: none;
+        }
+    }
+    //end
+
+    // gray button style
+    &.gray {
+        color: $gray;
+        border: 1px solid $dark_gray;
+        &:hover {
+            background: $light_gray;
+            color: $gray;
+        }
+        &.disabled, &[disabled] {
+            color: $gray;
+            background: $light_gray;
+        }
+        &.large {
+            &.disabled,
+            &[disabled] {
+            }
+        }
+        // active/pressed
+        &:active, &.pressed {
+            background: $dark_gray;
+            &.large {
+                background: $gray;
+                color: white;
+            }
+        }
+    }
+    //end
+
+    // white button style
+    &.white {
+        color: $white;
+        border: 1px solid $white;
+        &:hover {
+            background: $white;
+            color: $blue;
+        }
+        &.disabled, &[disabled] {
+        }
+        &.large {
+            &.disabled,
+            &[disabled] {
+            }
+        }
+        // active/pressed
+        &:active, &.pressed {
+            background: $white;
+            &.large {
+                background: $white;
+                color: $blue;;
+            }
+        }
+    }
+    //end
+
+    // orange button style
+    &.orange {
+        color: $orange;
+        border: 1px solid $orange;
+        &:hover {
+            background: $orange;
+            color: white;
+        }
+        &.disabled, &[disabled] {
+        }
+        &.large {
+            &.disabled,
+            &[disabled] {
+            }
+        }
+        // active/pressed
+        &:active, &.pressed {
+            background: $orange;
+            &.large {
+            }
+        }
+    }
+    // green button style
+    &.green {
+        color: $green;
+        border: 1px solid $green;
+        &:hover {
+            background: $green;
+            color: white;
+        }
+        &.disabled, &[disabled] {
+        }
+        &.large {
+            &.disabled,
+            &[disabled] {
+            }
+        }
+        // active/pressed
+        &:active, &.pressed {
+            background: $green;
+            &.large {
+            }
+        }
+    }
+}

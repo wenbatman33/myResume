@@ -1,0 +1,52 @@
+8
+
+dir
+435
+http://papervision3d.googlecode.com/svn/trunk/as2/trunk/src/org/papervision3d/core/utils
+http://papervision3d.googlecode.com/svn
+
+
+
+2007-07-04T02:42:55.787743Z
+19
+neoriley
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+071aa1e1-232a-0410-a790-59abb25ab4c3
+
+AssetLibrary.as
+file
+
+
+
+
+2007-10-16T02:22:32.406250Z
+8d26deed94fef4584ab9e73b2a491a84
+2007-07-04T02:42:55.787743Z
+19
+neoriley
+
+XML2Object.as
+file
+
+
+
+
+2007-10-16T02:22:32.421875Z
+60b91d553e42c52056e23f649bfad0e5
+2007-02-23T13:12:37.117283Z
+2
+neoriley
+

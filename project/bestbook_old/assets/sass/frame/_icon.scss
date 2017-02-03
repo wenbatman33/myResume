@@ -1,0 +1,60 @@
+.icon-menu{
+	@include background2(26px, 26px, 0px, 0px, 0px, 0px);
+}
+.icon-search{
+	@include background2(26px, 26px, -25px, 0px, 0px, 0px);
+}
+.icon-publish{
+	@include background2(38px, 26px, -50px, 0px, 0px, 0px);	
+}
+.icon-account{
+	@include background2(28px, 26px, -88px, 0px, 0px, 0px);
+}
+.icon-cart{
+	@include background2(40px, 28px, -118px, 0px, 0px, 0px);
+}
+.icon-blue-arrow-left{
+	@include background2(14px, 25px, -163px, 0px, 0px, -1px);
+}
+.icon-arrow-right-white{
+	@include background2(14px, 25px, -180px, 0px, 0px, -1px);
+}
+.icon-relate-arrow-left{
+	@include background2(14px, 25px, -200px, 0px, 0px, 0px);
+}
+.icon-relate-arrow-right{
+	@include background2(14px, 25px, -212px, 0px, 0px, 0px);
+}
+.icon-category-arrow{
+	@include background2(20px, 16px, 0px, -25px, 10px, -16px);
+}
+.icon-account-arrow{
+	@include background2(20px, 16px, -25px, -25px, 105px, -16px);
+}
+.icon-cart-arrow{
+	@include background2(25px, 16px, -50px, -25px, 380px, -16px);
+}
+.icon-bottom-buy{
+	//@include background2(50px, 70px, 0px, -50px, 0px, 0px);
+}
+.icon-bottom-cart{
+	@include background2(50px, 70px, -50px, -50px, 0px, 0px);
+}
+.icon-bottom-try{
+	//@include background2(50px, 70px, -100px, -50px, 0px, 0px);
+}
+.icon-bottom-next{
+	//@include background2(50px, 70px, -150px, -50px, 0px, 0px);
+}
+.icon-bottom-read{
+	@include background2(50px, 70px, -200px, -50px, 0px, 0px);
+}
+.icon-bottom-list{
+	@include background2(50px, 70px, -250px, -50px, 0px, 0px);
+}
+//[class^="icon-"]:before,
+[class*="icon-"]:before{
+	content: "";
+	position: relative;
+	@include inline-block;
+}

@@ -1,0 +1,52 @@
+8
+
+dir
+435
+http://papervision3d.googlecode.com/svn/trunk/as2/trunk/src/org/papervision3d/cameras
+http://papervision3d.googlecode.com/svn
+
+
+
+2007-02-23T13:12:37.117283Z
+2
+neoriley
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+071aa1e1-232a-0410-a790-59abb25ab4c3
+
+Camera3D.as
+file
+
+
+
+
+2007-10-16T02:22:35.265625Z
+95043a33556004780439e44c9a27bf59
+2007-02-23T13:12:37.117283Z
+2
+neoriley
+
+FreeCamera3D.as
+file
+
+
+
+
+2007-10-16T02:22:35.312500Z
+748bc48ad1d02f9719c6f126a1aa6535
+2007-02-23T13:12:37.117283Z
+2
+neoriley
+

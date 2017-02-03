@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<travel>
+<Personal Note="個人_娛樂" Map="travel/travel_map_b.jpg"  Schedule="travel/2_3.jpg" Other="">
+	<Option_point jpg="travel/travel_b3_1.jpg"  x="299"  y="375">
+	<Comment><![CDATA[日本環球影城® <br>各具特色的9大區域，加上以電影和漫畫為主題的遊樂設施和表演。不僅景點特殊，還有餐廳和商店、街頭表演（street performance）。各式各樣的街道風景和五花八門的當紅電影卡通明星，期待各位來欣賞。從孩子到大人，主題樂園洋溢著讓您體驗到"神奇"又令人感動的"夢"。]]></Comment>
+	<Link><![CDATA[http://www.usj.tw/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_b3_2.jpg"  x="371"  y="368">
+	<Comment><![CDATA[水上巴士<br>搭乘"水上巴士"您可以遊覽整個"水都‧大阪" 。水上巴士每天行駛,整個航程大約1小時,途中經過大阪城、中之島、OBP（大阪商務園區）、以及OAP(大阪娛樂廣場)等大阪主要的觀光景點。此外根據季節不同,還有很多特別活動。比如夏天的"生啤節"等就是其中之一。]]></Comment>
+	<Link><![CDATA[http://suijo-bus.jp/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_b3_3.jpg"  x="238"  y="268">
+	<Comment><![CDATA[手塚治虫紀念館<br>手塚治虫被視為日本漫畫之父，很年輕就展現出漫畫的才能，小，而在十八歲出版他的漫畫處女作，從此展開他數百部作品（動畫、漫畫）的燦爛生涯。為後來的漫畫家開創了許多漫畫的典範。紀念館於1994年4 月誕生於兵庫縣寶塚市。]]></Comment>
+	<Link><![CDATA[http://www.city.takarazuka.hyogo.jp/tezuka/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_b3_4.jpg"  x="135"  y="390">
+	<Comment><![CDATA[UCC咖啡博物館<br>能了解所有與咖啡有關的知識的博物館。從咖啡的歷史直至咖啡的燒制方法,所展示的內容包羅萬象。 ]]></Comment>
+	<Link><![CDATA[http://www.ucc.co.jp/museum/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_b3_5.jpg"  x="552"  y="80">
+	<Comment><![CDATA[丸益西村屋～友禪染布<br>來到京都想留下自己數一數二的紀念品，不妨來這裡體驗日本傳統手工染布。]]></Comment>
+	<Link><![CDATA[http://www.kyo-komachi.com/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_b3_6.jpg"  x="166"  y="286">
+	<Comment><![CDATA[有馬溫泉<br>位於有馬溫泉的發祥地，引入被稱為「赤湯」的「金泉」而建的溫泉，於平成14年(2002年)12月開始營業。可體會1400年之歷史給您的感覺。 ]]></Comment>
+	<Link><![CDATA[http://www.arima-onsen.com/]]></Link>
+	</Option_point>
+</Personal>
+</travel>

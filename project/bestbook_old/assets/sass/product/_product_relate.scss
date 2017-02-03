@@ -1,0 +1,157 @@
+.main-product{
+	.relate{
+		position: relative;
+		margin: 30px 0 30px;
+		h3{
+			font-size: 1.3em;
+			margin-bottom: 30px;
+		}
+		.icon-relate-arrow-left{
+			position: absolute;
+			top: 40%;
+			left: 0;
+		}
+		.icon-relate-arrow-right{
+			position: absolute;
+			top: 40%;
+			right: 0;
+		}
+	}
+	.bookcase{
+		padding-bottom: 15px;
+		margin: 0 30px;
+		overflow-x: scroll;
+		white-space: nowrap;
+		li>a{
+			&:hover{
+				.detail{
+					left: 0;
+					-moz-transition: left 0.3s ;
+					-o-transition: left 0.3s ;
+					-webkit-transition: left 0.3s ;
+					transition: left 0.3s ;
+				}
+			}
+		}
+		li{
+			width: 190px;
+			display: inline-block;
+			white-space: normal;
+			padding: 0 10px 10px 0;
+			@include box-sizing(border-box);
+			.bookItem{
+				position: relative;
+				display:block;
+				width: 100%;
+				height: 100%;
+				overflow:hidden;
+				@include box-sizing(border-box);
+			}
+			.ipadFrame{
+				position: absolute;
+				display: block;
+				width: 100%;
+				background-size: 100%;
+				z-index:4;
+				@include box-sizing(border-box);
+				img{
+					width: 100%;
+				}
+			}
+			.ipadInner{
+				position: relative;
+				display: block;
+				width: 100%;
+				height: 100%;
+				padding: 11% 9% 14% 9%;
+				overflow: hidden;
+				@include box-sizing(border-box);
+				img{
+					width: 100%;
+				}
+			}
+			.detail{
+				position: absolute;
+				display: block;
+				width: 100%;
+				height: 96%;
+				top:0;
+				left: 100%;
+				z-index: 1;
+				word-break:break-all;
+				background:#efefef;
+				z-index: 3;
+				padding: 11% 9% 16% 10%;
+				@include box-sizing(border-box);
+				-moz-transition: left 0.3s ;
+				-o-transition: left 0.3s ;
+				-webkit-transition: left 0.3s ;
+				transition: left 0.3s ;
+				.name{
+					display: none;
+					color: #333;
+					margin: 10px;
+					font-size: 1;
+					line-height: 1.5;
+					font-weight: bold;
+					//@include one-line;
+				}
+				.desc{
+					margin: 12px 6px 10px 6px;
+					line-height: 16px;
+					font-size: 13px;
+					color: #666;
+					overflow: hidden;
+				}
+			}
+		}
+		.actions-double{
+			margin-top: 10px;
+			text-align: center;
+		}
+		.actions{
+			margin-top: 10px;
+			text-align: center;
+		}
+	}
+}
+
+//large screen
+@include setMediaQueries(pc){
+	.main-product{
+		.bookcase{
+			li{
+				width: 148px;
+			}
+		}
+
+	}
+}
+
+//pad
+@include setMediaQueries(pad){
+	.main-product{
+		.bookcase{}
+		.relate{
+			margin: 20px;
+		}
+	}
+}
+
+//mobile
+@include setMediaQueries(phone){
+	.main-product{
+		.relate{
+			margin: 30px 10px 50px 10px;
+		}
+		.bookcase{
+			li{
+				width: 130px;
+				.detail{
+					display: none;
+				}
+			}
+		}
+
+	}
+}

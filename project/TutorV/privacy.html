@@ -1,0 +1,270 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="css/reset.css"/>
+<link rel="stylesheet" href="css/TutorV_Style.css"/>
+<link rel="stylesheet" href="css/TutorV_Font.css"/>
+<link rel="stylesheet" href="css/Grid.css"/>
+<link href="css/redmond/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/jquery.tinyscrollbar.min.js"></script>
+<script type="text/javascript" src="js/fancybox2.1.5/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript" src="js/fancybox2.1.5/source/jquery.fancybox.js?v=2.1.5"></script>
+<link rel="stylesheet" type="text/css" href="js/fancybox2.1.5/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+<script src="js/jquery.barrating.js"></script>
+<script type="text/javascript">
+$(function () {
+		var timer;
+		$('#example-f').barrating({ showSelectedRating:false });
+		$('.scrollBox_type1').tinyscrollbar();
+		var url = "video.html";
+		$(".videoBtn").click(function(){
+			$.fancybox({
+				width		: 1000,
+				height		: 800,
+				autoSize	: false,
+				closeClick	: true,
+				openEffect	: 'elastic',
+				closeEffect: 'elastic',
+				closeBtn: true,
+				closeClick:false,
+				hideOnOverlayClick:false,
+				autoScale : false,
+				type       :'iframe',
+				closeClick : false,
+				helpers : {overlay : {closeClick: false}},
+				beforeShow: function(){$(".fancybox-skin").css("backgroundColor","#999");},		
+				// other options
+				beforeLoad : function(){ this.href = url}
+			}); 
+		});
+		
+		var bNum=0;
+		var allNum=$('.albumUL li').length;
+	
+		$(".timelineUL li").click(function(){
+			var tempIndex=$( this).index( );
+			bNum=tempIndex
+			settingBanner(bNum);
+		});
+		
+		$("#leftBtn").click(function(){
+			bNum-=1;
+			if(bNum<0){
+				bNum=(allNum-1);
+			}
+			settingBanner(bNum);
+		});
+		
+		$("#rightBtn").click(function(){
+			bNum+=1 ;
+			if(bNum>=allNum){
+				bNum=0;
+			}
+			settingBanner(bNum);
+		});
+		function loop(){
+			bNum+=1 ;
+			if(bNum>=allNum){
+				bNum=0;
+			}
+			settingBanner(bNum);
+		}
+		
+		
+		function settingBanner(num){
+			var temp_date ="<div class=\"bannerTime margin_top40\">"+$(".albumUL li").eq(num).attr("data-Date")+"</div>";
+
+			var temp_time ="<div class=\"bannerTime color_orange\">"+$(".albumUL li").eq(num).attr("data-Time")+"</div>";
+			
+			$(".time").removeClass("color_orange");
+			$(".timelineUL li").eq(num).find(".time").addClass("color_orange");
+			$(".timelineOrange").stop().animate({ width: "0px" }, 0 );
+			
+			 window.clearTimeout(timer);
+ 			 //var millisecBeforeRedirect = 10000; 
+ 			 timer = window.setTimeout(function(){loop();},6000); 
+			 $(".timelineUL li").eq(num).find(".timelineOrange").stop().animate({ width: "130px" }, 6000 );
+			 
+			 
+			 
+			
+			var temp_Name =$(".albumUL li").eq(num).attr("data-Name");
+			var temp_teacher=$(".albumUL li").eq(num).attr("data-Teacher");
+			var str=temp_date+temp_time;
+			
+			var img =$(".albumUL li").eq(num).find('a');
+			$(".bannerDate").html(str);
+			$(".bannerClassName").html(temp_Name);
+			$(".bannerTeacherName").html(temp_teacher);
+			$(".bannerImg").animate({opacity: 0}, 200 );
+			
+			$(".bannerTime").stop().animate({left: "10px",opacity: 0}, 0 );
+			$(".bannerTime").stop().animate({left: "0px",opacity: 1}, 500 );
+			
+			
+			$(".bannerClassName").stop().animate({top: "-10px",opacity: 0}, 0 );
+			$(".bannerClassName").stop().delay(500).animate({top: "0px",opacity: 1}, 500 );
+			
+			$(".bannerTeacherName").stop().animate({top: "10px",opacity: 0}, 0 );
+			$(".bannerTeacherName").stop().delay(1000).animate({top: "0px",opacity: 1}, 500 );
+			
+			$(".bannerBtn").stop().animate({top: "350px",opacity: 0}, 0 );
+			$(".bannerBtn").stop().delay(1300).animate({top: "300px",opacity: 1}, 600, "easeOutBounce" );
+			
+			$(img).find('img').stop().animate({opacity: 1}, 500 );
+			
+			
+		}
+		settingBanner(0);
+		
+	
+		$.fn.extend({    
+			setup:function(){
+				var $block =$(this);
+				var $con =$block.find(".classes_List_warp");
+				var totalBox=$(this).find('.classes_ListBox').length,
+				nowNum=0,goingwidth=0,
+				timer, _Speed = 500;
+				$block.roll(0,totalBox);
+				$(this).find( ".left_arrowBtn2" ).click(function(){
+					nowNum-=1;
+					if(nowNum<=0){
+						nowNum=0;
+					}
+					$block.roll(nowNum);
+				});
+				$(this).find( ".right_arrowBtn2" ).click(function(){
+					nowNum+=1;
+					if(nowNum >= (totalBox-1)){
+						nowNum=totalBox-1;
+					}
+					$block.roll(nowNum,totalBox);
+				});
+				},roll:function(num,totalBox){
+					if(num<=0){
+						$(this).find('.left_arrowBtn2').hide();
+					}else{
+						$(this).find('.left_arrowBtn2').show();	
+					}
+					
+					if(num >= (totalBox-1)){
+						$(this).find('.right_arrowBtn2').hide();
+					}else{
+						$(this).find('.right_arrowBtn2').show();
+					}
+		
+					$(this).find(".classes_List_warp").stop().animate({"left":0-(num*960)}, 500);
+				}
+		});     
+		$("#classID_1").setup();
+		$("#classID_2").setup();
+		$("#classID_3").setup();
+});
+</script>
+</head>
+
+<!-- 載入時的燈箱頁面 start -->
+<a id="onLoadedPge" class="fancybox fancybox.iframe" href="popup.html" style=" display:none;" ></a>
+<!-- 載入時的燈箱頁面 end -->
+<body>
+<div class="coffee"></div>
+<div class="notebook"></div>
+<div class="container">
+    <div id="header" class="col11 margin_top20" > 
+        <a href="index.html"><div class="logo float_left "></div></a>
+        <div class="btnGroups">
+        <span class="color_white fontSize14">HI XXX，你好</span>
+        <span class=" inline_block color_white fontSize14 margin_right10">
+            <a class="fontSize14 color_white underline" href="#">編輯個人資料</a> 
+            <a class="fontSize14 color_white underline" href="#">登出</a>
+        </span> 
+        <a class="btn btn_Language" href="#">Language <b class="caret"></b></a> 
+        <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="#">English</a></li>
+                  <li><a tabindex="-1" href="#">Japanese</a></li>
+                  <li><a tabindex="-1" href="#">Portuguese</a></li>
+                  <li><a tabindex="-1" href="#">Spanish</a></li>
+        </ul>
+        </div>
+    </div>
+    <hr/>
+    <div class="col11 ">
+   		 <h1 class="title color_white">隱私權政策</h1>
+         
+    	<div class="rules color_white lineHeight30 margin_top20">
+                    <h4>
+                        您的個人資料檔案</h4>
+                    <p lingdex="0" class="color_lightGray">
+                        TutorV之所以要求會員個人資料，主要是要提供會員專屬的數位學習服務。除非得到您的同意、對於會員個人的資料，我們絕對不會加以洩漏、轉售或與其他機構進行交換。您可以隨時利用更新個人資料檔案來停止這些服務，並隨時都可以到個人檔案中變更或更新資料，您只要登入並按一下
+                        [基本資料維護] 即可。</p>
+                    <p lingdex="1" class="color_lightGray">
+                        TutorV 需索取會員的某些個人資料（如姓名、電子郵件地址、實際地址等），我們需要這些資料以便快速便利為會員提供服務，並不斷提升此服務內容以便更能符合使用需求。此外，我們如認為某些協力廠商能為我們的會員提升相關產品之服務性，則我們可能會讓他們使用此類個人資料，協力廠商包括銷售各式產品及服務的企業或公司。但
+                        TutorV 絕不會提供協力廠商有關會員個人信用卡上之隱私資料。</p>
+                    <p lingdex="2" class="color_lightGray">
+                        TutorV 尊重使用會員的隱私權，若您不希望我們將個人資料提供他人使用，我們將會尊重您的決定。若您不希望我們讓他人使用個人資料，只要寄電子郵件至 services@tutorv.com
+                        即可。您亦可隨時登入「會員服務」→「基本資料維護」確認或變更您的個人資料。</p>
+                    <p lingdex="3" class="color_lightGray">
+                        除了索取個人資料外，TutorV 還可能向使用者索取其個人簡歷（如職業、教育、年齡及性別等），以便提升我們的產品、服務、宣傳及行銷成效。TutorV 可能會利用此類個人簡歷資料，來製作有關用戶群的整體報告，此類個人簡歷資料及整體報告皆為不具名形式，不會包含能識別您個人資料的內容。</p>
+                    <p lingdex="4" class="color_lightGray">
+                        儘管如上所述，TutorV 仍有權因下列需求或情況，而公開任何內容、記錄或電子通訊等資料；(i) 依法配合司法檢調機關執行法律上或公務之需求(ii) 為強制執行此「合約」、「授權合約」或「使用規定」而需要公開時，或者
+                        (iii) 為保護 TutorV 或其使用者或合夥人的權利。
+                    </p>
+                    <h4>
+                        安全程度</h4>
+                    <p lingdex="5" class="color_lightGray">
+                        在信用卡資料透過網路傳送給我們之前，這些資料都經過我們的安全伺服器予以加密處理。在登入時，我們也堅持使用密碼認證，避免您的個人資料檔案及學習記錄在未經授權的狀況下被存取。經開啟後之網頁持續未使用時，經過一段時間我們會自動將其登出，以保護您資料使用之安全。
+                    </p>
+                    <h4>
+                        註冊訂閱</h4>
+                    <p lingdex="6" class="color_lightGray">
+                        TutorV以具競爭力的價格提供線上學習課程。要使用其中任一項之服務時，您必須成為TutorV 正式會員。如選擇以信用卡方式給付費用，您必須要提供信用卡的資料給我們，以便您購買想要之服務產品。我們會將這些資料加密儲存在一個安全的伺服器中。
+                    </p>
+                    <h4>
+                        Cookies</h4>
+                    <p lingdex="7" class="color_lightGray">
+                        我們將您的個人資料之細節儲存在電腦的瀏覽器或硬碟的「cookies」中。我們使用cooki-es來制定您的國家及使用的語言。我們的 cookies 並不蒐集您電腦瀏覽器或硬碟上的額外資訊。大部分的瀏覽器都提供避免將您電腦上的資料儲存到
+                        cookies 的選項，不過此種行為將會使您在使用 TutorV 時少掉部份的便利性。</p>
+                    <h4>
+                        IP 地址和瀏覽器版本</h4>
+                    <p lingdex="8" class="color_lightGray">
+                        我們的網站會記錄您電腦的IP地址與瀏覽器的類型，但我們並不會將這些數據與可以識別您身分的任何東西連結在一起。也就是說我們會追蹤會員的使用狀況，但使用會員仍然會保持在隱形的狀態中。我們記錄這些資訊的原因，是為了要確認客戶使用型態與網站的使用狀況，以協助我們改善
+                        TutorV 的設計與編排格式。
+                    </p>
+                    <h4>
+                        他網站的連結</h4>
+                    <p lingdex="9" class="color_lightGray">
+                        這個網站包含了到其他網站的連結。請注意，www.tutorv.com 並不負責保護您在其他網站的隱私。我們建議使用者在離開我們的網站時應多加注意，並仔細閱讀其他蒐集可識別個人身分資料的網站，其有關於隱私權保護的聲明。本隱私權聲明只適用於
+                        www.tutorv.com 網站所蒐集的資料。
+                    </p>
+                    <h4>
+                        介紹親朋好友</h4>
+                    <p lingdex="10" class="color_lightGray">
+                        如果您要介紹親朋好友到 TutorV 加入或參與相關之活動的話，請提供您親友電子郵件地址。然後 TutorV 就會發一封自動產生的電子郵件給您的朋友，並邀請參觀我們的網站。若您的朋友因此成為會員，記錄將會視您為介紹者。
+                    </p>
+                    <p class="color_lightGray">
+                        TutorV 的隱私權政策，保護條款及其他相關之約定，將會視實際需要作適度修訂。如果我們決定改變我們蒐集、使用或分享資料的方式時，我們會採取適當的商業步驟，透過電子郵件通知會員並說明更動的原因，亦會讓會員自由決定是否同意我們用新方法來使用他們的資料。如果您對這個部分的條款有任何問題，或是對
+                        TutorV 其他條款或做法有任何問題時，請與我們聯絡。
+                    </p>
+                    <p lingdex="11" class="color_lightGray">
+                        所有與TutorV相關的法律問題，皆相關於麥奇數位。
+                    </p>
+                </div>
+    
+    </div>
+    
+    
+    
+    
+   <div class="footer col11 float_left color_white">
+     <hr/>
+    <span><a href="index.html" class=" color_white">首頁</a> | <a href="privacy.html" class=" color_white">隱私權政策</a> | <a href="security.html" class=" color_white">安全性條款</a> | <a href="service.html" class=" color_white">服務條款</a> </span> <span>© 2014 TutorGroup All Rights Reserved.</span>
+ </div>
+</div>
+</body>
+</html>

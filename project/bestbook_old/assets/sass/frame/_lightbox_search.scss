@@ -1,0 +1,52 @@
+.lightbox{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.35);
+	z-index: 10;
+	.block{
+		margin: 20px auto;
+		background: white;
+		border: 3px solid $light_gray;
+		width: 600px;
+		@include border-radius(5px);
+	}
+	.search-block{
+		position: relative;
+	}
+	.search-input{
+		display: inline-block;
+		width: 100%;
+		padding-right: 50px;
+	}
+	.lb-input-search{
+		width: 100%;
+		border: none;
+		margin: 0;
+		padding: 12px 8px;
+	}
+	.icon-search{
+		position: absolute;
+		top: 2px;
+		right: 3px;
+		padding: 7px;
+	}
+	.suggest{
+		display: block;
+		padding: 10px 8px;
+		border-top: 1px solid $light_gray;
+		&:hover{
+			background: $light_gray;
+		}
+	}
+}
+
+@media only screen and (max-width: $screen-md-max){
+	.lightbox{
+		.block{
+			width: 95%;
+		}		
+	}
+}

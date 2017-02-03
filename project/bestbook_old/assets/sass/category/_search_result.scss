@@ -1,0 +1,23 @@
+.search-result{
+	margin: 15px 0;
+	p{
+		line-height: 180%;
+	}
+	.red-text{
+		color: $red;
+		margin: 0 5px;
+	}
+	a{
+		color: $blue;
+		text-decoration: underline;
+	}
+	//pad
+@media only screen and (min-width: $screen-md-min) and (max-width: $screen-md-max){
+}
+
+//mobile
+@media only screen and (max-width: $screen-sm-max){
+	padding: 0 15px;
+}
+}
+

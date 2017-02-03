@@ -1,0 +1,18 @@
+headline {
+  font-family: Arial,Helvetica,細明體;
+  font-size: 12px;
+  color: #117BC0
+}
+
+mainBody {
+  font-family: Arial,Helvetica,細明體;
+  font-size: 12px;
+  color: #666666
+}
+
+Body {
+  font-family: Arial,Helvetica,細明體;
+  font-size: 12px;
+  line-height: 2px;
+  color: #666666
+}

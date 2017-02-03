@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="big5"?>
+<root>
+<index2><![CDATA[http://www.fila.com.tw/filaweb/backend/xml_index.asp]]></index2>
+<p5_2><![CDATA[http://www.fila.com.tw/filaweb/backend/xml_sponsor.asp]]></p5_2>
+<p5_3><![CDATA[http://www.fila.com.tw/filaweb/backend/xml_release.asp]]></p5_3>
+<p6><![CDATA[http://www.fila.com.tw/filaweb/backend/xml_shops.asp]]></p6>
+<product><![CDATA[http://www.fila.com.tw/filaweb/backend/product_xml.asp?t_seq=]]></product>
+</root>

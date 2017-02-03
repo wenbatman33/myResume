@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<travel>
+<Personal Note="家族_著名" Map="travel/travel_map_d.jpg"  Schedule="travel/4_4.jpg" Other="">
+	<Option_point jpg="travel/travel_d4_1.jpg"  x="278"  y="400">
+	<Comment><![CDATA[天保山海遊館<br>世界上最大規模的海洋水族館之一的大阪水族館----"海遊館"。這裏集中了近580種數以萬計的太平洋沿岸的海洋生物。調皮伶俐的水獺,憨態可掬的企鵝,還有色彩奇異的水母…無不讓你驚歎這海底世界的奇妙和大自然的偉大！]]></Comment>
+	<Link><![CDATA[http://www.kaiyukan.com/index.html]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_d4_2.jpg"  x="123"  y="360">
+	<Comment><![CDATA[布引香草花園<br>種有200多種四季特有的藥草。看看花草,增長知識,舒展身心,這裡是芳香漫溢的自然庭園。 ]]></Comment>
+	<Link><![CDATA[http://www.shinkoberopeway.com/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_d4_3.jpg"  x="141"  y="399">
+	<Comment><![CDATA[神戶花鳥園<br>是可以與花卉和鳥類親密接觸的全天候型主題公園，終於在2006年3月15日對外開張。散養了鸚哥、企鵝等，可以直接用手觸摸。 ]]></Comment>
+	<Link><![CDATA[http://www.kamoltd.co.jp/kobe/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_d4_4.jpg"  x="591"  y="369">
+	<Comment><![CDATA[梅花鹿公園<br>又稱奈良公園，這裡是從大正十一年(1922)被正式指定為國家級名勝，並命名為奈良公立公園，總面積六百六十公頃，奈良公園最引人注目的是梅花鹿，這些鹿是春日大社祭神之物，被視為神的化身園內，現有鹿一千二百頭，是日本梅花鹿最集中的地方。]]></Comment>
+	<Link><![CDATA[http://www.pref.nara.jp/dd_aspx_menuid-1713.htm]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_d4_5.jpg"  x="584"  y="374">
+	<Comment><![CDATA[圓山公園<br>建於1886年 8月5日，是開設最早的公園。在八阪神社東面，背對東山，約有86,600平方公尺。是京都第一的賞櫻勝地。賞花時的壓軸戲是"坻園夜櫻"。毎年夏天的星期六，野外音樂堂都有音樂會專場。野外音樂堂、阿須山、藤棚、廁所、池泉、噴泉。]]></Comment>
+	<Link><![CDATA[http://kaiwai.city.kyoto.jp/multi/view_sight.php?InforKindCode=1&ManageCode=10000011&lang=zh]]></Link>
+	</Option_point>
+</Personal>
+</travel>

@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>:::PEGA:::Design &amp; Engineering</title><br />
+<script type="text/javascript">
+var requiredMajorVersion = 8;
+var requiredMinorVersion = 0;
+var requiredRevision = 0;
+var jsVersion = 1.0;
+
+properties = "top=0,left=0,resizable=yes,";
+properties += "toolbar=no, scrollbars=no, menubar=no, location=no, statusbar=no"
+properties += ",width=" + screen.width + ",height=" + screen.height;
+
+function openFullWin(address) {
+var BRWindow = window.open(address, "bellross", properties);
+	if (!BRWindow) {
+		alert("Please deactivate your popup blocker to access site\nor press CTRL key when clicking the Enter button.");
+	}
+
+}
+self.moveTo(0,0);
+self.resizeTo(screen.availWidth,screen.availHeight);
+
+</script>
+
+<script type="text/javascript" src="JavaScript/swfobject.js"></script>
+<script type="text/javascript" language="JavaScript">
+function Launch(page){
+	OpenIt = window.open(page,"new","fullscreen=0,toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,directories=no,location=yes,width=" + screen.width + ",height=" + screen.height + ",top=0,left=-5");
+}
+</script>
+
+<style type="text/css">
+	
+	/* hide from ie on mac \*/
+	html {
+		height: 100%;
+		overflow: hidden;
+	}
+	
+	#flashcontent {
+		width: 100%;
+		height: 100%;
+	}
+	/* end hide */
+
+	body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #000000;
+	}
+}
+
+.style1 {color: #FFFFFF; font-family: Arial, Helvetica, sans-serif; }
+</style>
+
+</head>
+<body>
+	<!-- Alternate Text -->
+	<div class="style1" id="flashcontent">
+	  <center>
+	    <p class="style1">Please upgrade Flash Player</p>
+	    <p class="style1">&nbsp;</p>
+	    <p class="style1"><img src="images/get_flash_player.jpg" alt="" width="158" height="39" /></p>
+	  </center>
+	</div>
+	
+	<script type="text/javascript">
+		var so = new SWFObject("base.swf", "Main", "100%", "100%", "8", "#000000", true);
+		so.addParam("scale", "noscale");
+		so.write("flashcontent");
+	</script>
+	
+</body>
+</html>

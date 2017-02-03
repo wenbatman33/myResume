@@ -1,0 +1,56 @@
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, blockquote {
+	margin: 0; padding: 0; border: 0;
+}
+
+
+
+
+
+
+#transformers-rule {
+	width: 100%; position: relative; margin: 50px auto;
+}
+
+.container {
+	width: 1024px; height: 100%;
+	/* 3d 的深度*/
+	-webkit-perspective: 6000;
+}
+
+.card {
+	position:relative;
+	float:left;
+	width: 238px; height: 160px;
+	margin:6px;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: 0.5s;
+}
+/*.container:hover .card {
+		-webkit-transform: rotateY(180deg);				
+}
+*/
+.face {
+	position: absolute;
+	-webkit-backface-visibility: hidden;
+}
+
+
+.megatron {
+	/*-webkit-transform: rotate(5deg); */
+}
+	.megatron .front {
+		
+	}
+	.megatron .back {
+		width: 238px; height: 160px;
+		-webkit-transform: rotateY(180deg);
+		background:url(../images/card.jpg)
+	}
+		
+		.megatron img {
+			float: right;
+		}
+		
+
+	
+

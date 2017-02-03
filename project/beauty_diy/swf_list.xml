@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <page>
+	<page>
+	<link><![CDATA[swf/p1.swf]]></link>
+
+	<sound><![CDATA[no]]></sound>
+	</page>
+	<page>
+	<link><![CDATA[swf/p1.swf]]></link>
+	<sound><![CDATA[no]]></sound>
+	</page>
+	<page>
+	<link><![CDATA[swf/p2.swf]]></link>
+	<sound><![CDATA[no]]></sound>
+	</page>
+        <page>
+	<link><![CDATA[swf/p5.swf]]></link>
+	<sound><![CDATA[swf/sound5.mp3]]></sound>
+	</page>
+        <page>
+	<link><![CDATA[swf/p6.swf]]></link>
+	<sound><![CDATA[swf/sound5.mp3]]></sound>
+	</page>
+        <page>
+	<link><![CDATA[swf/p7.swf]]></link>
+	<sound><![CDATA[swf/sound5.mp3]]></sound>
+	</page>
+        <page>
+	<link><![CDATA[swf/queries.swf]]></link>
+	<sound><![CDATA[no]]></sound>
+	</page>
+	<page>
+	<link><![CDATA[swf/back.swf]]></link>
+	<sound><![CDATA[no]]></sound>
+	</page>
+
+</page>		
+<background>
+<link><![CDATA[swf/bg.swf]]></link>
+</background>
+
+</root>

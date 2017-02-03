@@ -1,0 +1,61 @@
+8
+
+dir
+435
+http://papervision3d.googlecode.com/svn/trunk/as2/trunk/src/org/papervision3d/core
+http://papervision3d.googlecode.com/svn
+
+
+
+2007-07-09T11:10:50.667478Z
+24
+C4RL054321
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+071aa1e1-232a-0410-a790-59abb25ab4c3
+
+utils
+dir
+
+Number3D.as
+file
+
+
+
+
+2007-10-16T02:22:33.781250Z
+5e05fb33df7c8f6f8e157ab0ae257993
+2007-02-23T13:12:37.117283Z
+2
+neoriley
+
+proto
+dir
+
+NumberUV.as
+file
+
+
+
+
+2007-10-16T02:22:33.781250Z
+067e5a59c539d06833428aff89a4ae16
+2007-02-23T13:12:37.117283Z
+2
+neoriley
+
+geom
+dir
+

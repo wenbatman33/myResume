@@ -1,0 +1,28 @@
+.breadcrumbs{
+	margin: 15px 0;
+	a{
+		color: $blue;
+	}
+	.locate{
+		display: inline-block;
+		margin-left: 5px;
+		color: $gray;
+	}
+}
+@include setMediaQueries(pad){
+	.breadcrumbs{
+		margin: 15px 0 15px 15px;
+		.locate{
+			margin-left: 10px;
+		}
+	}
+}
+//mobile
+@include setMediaQueries(phone){
+	.breadcrumbs{
+		margin: 15px 0 15px 15px;
+		.locate{
+			//margin-left: 10px;
+		}
+	}
+}

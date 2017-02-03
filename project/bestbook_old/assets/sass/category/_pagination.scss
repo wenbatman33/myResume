@@ -1,0 +1,27 @@
+.pagination{
+	line-height: 140%;
+    list-style: none;
+    text-align: center;
+    margin: 70px 0;
+    @media only screen and (max-width: $screen-md-max){
+		//display: none;
+	}
+    li{
+		display: inline-block;
+		text-decoration: underline;
+		margin-right: 15px;
+		&.page{
+			text-decoration: none;
+			margin-right: 2px;
+			a{
+    			padding: 3px 10px;
+    			display: block;
+    			border: 1px solid #ddd;
+    			&:hover , &.current{
+    				background: $blue;
+    				color: #fff;
+    			}
+			}
+		}
+    }
+}

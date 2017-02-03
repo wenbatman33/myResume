@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<travel>
+<Couples Note="情侶_著名" Map="travel/travel_map_a.jpg"  Schedule="travel/1_4.jpg" Other="">
+	<Option_point jpg="travel/travel_a4_1.jpg"  x="447"  y="361">
+	<Comment><![CDATA[空中庭院展望台<br>這個空中瞭望台實際上是連接梅田大廈雙塔的空中走廊。以環形屋頂為特徵的梅田摩天大廈為人們提供了360度的廣闊視野。雖身處室內，但是在觀景的同時，還是能夠感受170米高空的強風。在空中瞭望台，您能俯瞰整個大阪，天氣好的時候您還可以看到不遠處的淡路島。]]></Comment>
+	<Link><![CDATA[http://www.skybldg.co.jp/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_a4_2.jpg"  x="381"  y="411">
+	<Comment><![CDATA[天保山海遊館<br>世界上最大規模的海洋水族館之一的大阪水族館----"海遊館"。這裏集中了近580種數以萬計的太平洋沿岸的海洋生物。調皮伶俐的水獺,憨態可掬的企鵝,還有色彩奇異的水母…無不讓你驚歎這海底世界的奇妙和大自然的偉大！]]></Comment>
+	<Link><![CDATA[http://www.kaiyukan.com/index.html]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_a4_3.jpg"  x="394"  y="403">
+	<Comment><![CDATA[天保山摩天倫<br>坐落在大阪灣口的天保山大摩天輪曾經是世界上最大、最高、也是技術最先進的摩天輪（如今最大的是英國航空倫敦眼摩天輪）。乘坐摩天輪，您可以從高空中盡情地俯瞰大海、遠山及整個大阪市，您還可以從跨海的明石海峽大橋起一直看到神戶的六甲山。]]></Comment>
+	<Link><![CDATA[http://www.kaiyukan.com/thv/ferriswheel/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_a4_4.jpg"  x="247"  y="396">
+	<Comment><![CDATA[聖瑪麗亞號觀光帆船<br>有客廳的遊覽船「幻想」在神戶港內‧港外周遊，唯一鑽過機場聯絡橋下的遊覽船，近距離能欣賞神戶機場。]]></Comment>
+	<Link><![CDATA[http://www.feel-kobe.jp/traditional/sightseeing/harbor8.html]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_a4_5.jpg"  x="251"  y="401">
+	<Comment><![CDATA[神戶港夜景<br>日本著名的三大夜景，彷若一場燈光秀，周邊的建築物所呈現出來的顏色五彩繽紛，相互輝映，目不暇給。 ]]></Comment>
+	<Link><![CDATA[http://kobe-yakei.net/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_a4_6.jpg"  x="107"  y="428">
+	<Comment><![CDATA[明石海峽大橋<br>在明石海峽大橋的橋樑上建造的遠望設施。走在自海面高度為47m的漫步道上，大阪灣及瀨戶內海盡收眼底。 ]]></Comment>
+	<Link><![CDATA[http://www.feel-kobe.jp/traditional/sightseeing/suma12.html]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_a4_7.jpg"  x="227"  y="372">
+	<Comment><![CDATA[布引香草花園<br>種有200多種四季特有的藥草。看看花草,增長知識,舒展身心,這裡是芳香漫溢的自然庭園。 ]]></Comment>
+	<Link><![CDATA[http://www.shinkoberopeway.com/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_a4_8.jpg"  x="272"  y="390">
+	<Comment><![CDATA[神戶海上愛之船<br>浪漫巡航，盡覽明石海峽大橋風光。來自香港，榮獲中華料理界最高榮譽「中國烹飪大師」美名的「鍾戚榮」主廚發揮嶄新創意再現廣東料理新風貌，讓您在船上也能享受中菜西吃與鐵板燒的美味。 ]]></Comment>
+	<Link><![CDATA[http://www.kobeconcerto.com/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_a4_9.jpg"  x="236"  y="374">
+	<Comment><![CDATA[神戶夢風船<br>通往「布引香草園」的重要交通手段,是運載芬芳和浪漫的「神戶夢想氣球」。神戶獨有的風景將展現在您的眼前。 ]]></Comment>
+	<Link><![CDATA[http://www.shinkoberopeway.com/]]></Link>
+	</Option_point>
+	<Option_point jpg="travel/travel_a4_10.jpg"  x="244"  y="372">
+	<Comment><![CDATA[神戶市廳展望大廳(夜景)<br> 搭乘高速電梯登上24層展望廳，眺望三宮地區的繁忙且熙來攘往的街景、六甲山脈及神戶港區，更可遠眺神戶空港及大阪灣之港灣風情。]]></Comment>
+	<Link><![CDATA[http://www.city.kobe.lg.jp/information/about/building/index.html]]></Link>
+	</Option_point>
+</Couples>
+</travel>

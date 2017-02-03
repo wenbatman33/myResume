@@ -1,0 +1,227 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Zy4U Newsletter Test: 12th issue</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<style type="text/css"> 
+html, td { font-family: Arial, Helvetica, sans-serif; color: #58585a; }
+a { color: #3078d0; text-decoration:none; }
+a:hover { text-decoration:underline !important; }
+body {
+	margin-top: 0px;
+}
+	ul, li {
+		margin: 0;
+		padding: 0;
+		list-style: none;  
+	}
+
+	a img {
+		border: none;
+	}
+
+	#album {
+		margin: 0 auto;
+		width: 960px;	/* 框架圖片的寬 */
+		height: 400px;	/* 框架圖片的高 */
+		position: relative;
+
+	}
+
+	#album a.prev, #album a.next {
+		position: absolute;
+		top: 173px;
+		display: block;
+		width: 56px;	/* 左右鈕圖片的寬 */
+		height: 53px;	/* 左右鈕圖片的高 */
+		text-indent: -9999px;
+	}
+
+	#album .prev {
+		background: url('images/left.png') no-repeat;
+	}
+
+	#album .next {
+		background: url('images/right.png') no-repeat;
+		right: 0;
+	}
+
+	#album .slides {
+		overflow: hidden;
+		position: relative;
+		top: 0px;
+		left: 0px;
+		width: 960px;	/* 框架中間區塊的寬 */
+		height: 400px;	/* 框架中間區塊的高 */
+	}
+
+	#album .slides ul {
+		position: absolute;
+		width: 9990px;
+		height: 100%;
+	}
+
+	#album .slides li {
+		width: 960px;	/* 框架中間區塊的寬 */
+		height: 100%;
+		float: left;
+	}
+</style>
+<script type="text/javascript">
+	$(function(){
+		// 先取得必要的元素並用 jQuery 包裝
+		// 再來取得 $block 的寬度及設定動畫時間
+		var $block = $('#album'), 
+			$slides = $block.find('.slides'), 
+			$ul = $slides.find('ul'), 
+			_width = $slides.width(), 
+			_left = _width * -1, 
+			_animateSpeed = 600, 
+			// 加入計時器, 輪播時間及控制開關
+			timer, _showSpeed = 3000, _stop = false;
+		
+		// 先把最後一個 li 的內容插入到第一個 li 前面
+		// 並設定 $ul 的 left 及 width
+		$ul.find('li:first').before($ul.find('li:last')).end().css({
+			left: _left,
+			width: _width * ($ul.find('li') + 1)
+		});
+
+		// 當點擊到 a.prev 時
+		var $prev = $block.find('a.prev').click(function(){
+			// 移動 $ul
+			$ul.stop(false, true).animate({'left' : _left + _width}, _animateSpeed, function () {
+				// 把最後一個 li 的內容插入到第一個 li 前面
+				$ul.find('li:first').before($ul.find('li:last')).end().css('left', _left);
+				// 當移動到正確位置後, 依判斷來啟動計時器
+				if(!_stop) {
+					clearTimeout(timer);
+					timer = setTimeout(move, _showSpeed);
+				}
+			});
+			return false;
+		});
+		
+		// 當點擊到 a.next 時
+		var $next = $block.find('a.next').click(function(){
+			// 移動 $ul
+			$ul.stop(false, true).animate({'left' : _left - _width}, _animateSpeed, function () {
+				// 把第一個 li 的內容插入到最後一個 li 後面
+				$ul.find('li:last').after($ul.find('li:first')).end().css('left', _left);
+				// 當移動到正確位置後, 依判斷來啟動計時器
+				if(!_stop) {
+					clearTimeout(timer);
+					timer = setTimeout(move, _showSpeed);
+				}
+			});
+			return false;
+		});
+		
+		// 如果滑鼠移入 $block 時
+		$block.hover(function(){
+			// 關閉開關及計時器
+			_stop = true;
+			clearTimeout(timer);
+		}, function(){
+			// 如果滑鼠移出 $block 時
+			// 開啟開關及計時器
+			_stop = false;
+			timer = setTimeout(move, _showSpeed);
+		}).find('a').focus(function(){
+			this.blur();
+		});
+		
+		// 計時器使用
+		function move(){
+			$next.click();
+		};
+
+		timer = setTimeout(move, _showSpeed);
+	});
+</script>
+<meta name="chromesniffer" id="chromesniffer_meta" content="{}">
+</head>
+<body style="background-color:#eaeff5; background-image:url(http://www.studerus.ch/images/nl/bgLines.gif); text-align:center;">
+<table style="width:960px; text-align: center;" cellpadding="0" cellspacing="0" align="center">
+<tbody><tr>
+  <td style="width:610px; padding:0px; background-color:none; border:none; text-align:right; vertical-align:top;"><table width="100%" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td style="width:126px; padding:0px; margin:0px; vertical-align:top; text-align: left;"><img style="width:126px; border:0px; margin:0px; padding:0px;" width="126" src="images/zyxel_logo.jpg" alt="Bild"></td>
+        <td align="right" valign="top" style="width:471px; padding:0px; margin:0px;">&nbsp;</td>
+      </tr>
+    </tbody>
+  </table></td>
+</tr>
+<tr style="height:10px;">
+<td style="background-color:transparent; line-height:10px; font-size:1px;">&nbsp;</td>
+</tr><tr>
+<td style="background-color:transparent; text-align: left; vertical-align:middle;">
+<table cellspacing="0" cellpadding="0">
+<tbody><tr style="background:#667d9d; height:4px; line-height:4px;">
+<td style="background:#667d9d; height:4px; line-height:4px; font-size:4px; border:none;">&nbsp;</td>
+</tr>
+<tr style="background:#667d9d; height:18px; vertical-align:middle; line-height:18px;">
+<td style="background:#667d9d; color:#FFF; padding: 0px 10px 0px 10px; line-height:18px; font-size:15px; text-transform:uppercase; display:inline; border:none; vertical-align:middle;">Feature Article </td>
+</tr>
+<tr style="background:#667d9d; height:4px; line-height:4px;">
+<td style="background:#667d9d; height:4px; line-height:4px; font-size:4px; border:0px; padding:0px; margin:0px;">&nbsp;</td>
+</tr>
+<tr style="height:6px; line-height:6px; vertical-align:top;">
+<td style="background:none; height:6px; padding:0px; font-size:6px; margin:0px; line-height:6px; text-align: left; vertical-align:top; border:0px;"><img style="width:28px; height:6px; border:0px; margin:0px; padding:0px;" src="images/spickelBlue.png"></td>
+</tr>
+<tr style="background:none; height:4px; line-height:4px;">
+<td style="background:none; height:4px; font-size:4px; line-height:4px; border:none;">&nbsp;</td>
+</tr>
+</tbody></table>
+</td>
+</tr><tr>
+<td height="0" style="width:590px; padding:0px; background-image:url(images/bg240.png); background-repeat: repeat-x; background-position: bottom left; background-color:#f7f8f9; border-style:solid; border-width:10px; border-color:#ffffff; text-align:center; vertical-align:top;">
+
+<div id="album">
+		<div class="slides">
+			<ul>
+				<li><a href="#"><img src="images/Feature-Article01_1.jpg" alt="" /></a></li>
+				<li><a href="#"><img src="images/Feature-Article01_2.jpg" alt="" /></a></li>
+				<li><a href="#"><img src="images/Feature-Article01_3.jpg" alt="" /></a></li>
+			</ul>
+		</div>
+		<a href="#" class="prev">&lt;</a>
+		<a href="#" class="next">&gt;</a>
+    </div>
+</td>
+</tr><tr>
+<td style="background-color:transparent; text-align: left; vertical-align:middle;">&nbsp;</td>
+</tr><tr>
+  <td height="561" style="width:590px; padding:0px; background-image:url(images/bg240.png); background-repeat: repeat-x; background-position: bottom left; background-color:#f7f8f9; border-style:solid; border-width:10px; border-color:#ffffff; text-align:center; vertical-align:top;"><table padding:0px;" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td height="276" style="padding:10px; text-align:left; vertical-align:top;"><h2 style="font-size:24px; line-height: 26px; color: #2e2d30; padding:0px; margin-bottom:10px; margin-top:0px; font-weight:normal;">&quot;Flameproof &quot;ZyXEL USG Series guards networks against Flame cyber espionage</h2>
+          <p><br>
+            The Flame virus is a highly sophisticated malicious program capable of stealing on-screen information, monitoring email inboxes, turning on microphones to record nearby conversations, and even use Bluetooth to infect nearby smartphones. Flame malware is able to send stolen data to a network of command-and-control servers located in different parts of the world. With worm-like features, Flame can also replicate over local networks, causing network-wide computer infection. The complexity and functionality of the Flame malware exceed all other cyber-espionage malware known to date. Afflicted areas currently include Middle Eastern countries like Iran, Lebanon, Syria, and Israel.</p>
+          <p>ZyXEL Unified Security Gateway (USG) models that support ZyXEL’s anti-virus license service are designed to provide businesses with real-time network inspection and multi-layer network protection. USG models are able to detect the Flame malware upon an intrusion attempt and block the malware upon discovery. ZyXEL offers two different anti-virus options as part of the security license service, Kaspersky Anti-Virus and the ICSA-certified ZyXEL Anti-Virus. Both Kaspersky and ZyXEL are equipped with Flame malware information in anti-virus databases, enabling ZyXEL USGs with an anti-virus subscription to protect networks from the Flame virus.</p>
+          <p>In addition to protecting corporate networks from the latest cyber-attack combinations, ZyXEL Unified Security Gateways offer multiple VPN functions for secure remote network access, and powerful content filters by Blue Coat and Commtouch for safer web surfing, robust email security, and advanced application patrol functions. ZyXEL Unified Security Gateways are full-featured security platforms that guarantee network security for businesses.<br>
+            <br>
+            More  information:<br>
+            <br>
+            <a href="http://www.kaspersky.com/about/news/virus/2012/Kaspersky_Lab_and_ITU_Research_Reveals_New_Advanced_Cyber_Threat">Kaspersky Lab and ITU Research Reveals New Advanced Cyber  Threat</a><br>
+            <br>
+            <a href="http://www.zyxel.com/products_services/smb-security_appliances_and_services.shtml?t=c">ZyXEL Security Appliances and Services</a></p></td>
+      </tr>
+      </tbody>
+    </table></td>
+</tr>
+<tr style="height:10px;">
+  <td style="background-color:transparent; line-height:10px; font-size:1px;">&nbsp;</td>
+</tr> 
+
+<tr> 
+    <td height="0" style="width:610px; padding:0px; background-color:#ffffff; border-style:solid; border-width:10px; border-color:#ffffff; text-align:center; vertical-align:top;"><table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-family:Arial, Helvetica, sans-serif; font-size:11px;">
+      <tr>
+        <td colspan="2" style="color:#999999;"><hr /></td>
+      </tr>
+      <tr>
+        <td width="43%" style="color:#999999;"><p><a href="#">Legal Notice</a>  &nbsp;<a href="#">Privacy Statement</a><a href="http://www.zyxel.com/products_services/p_660hn_t1h.shtml" class="dark">&nbsp;&nbsp;ZyXEL Feeds</a>
+          </td>
+        <td width="57%" align="right" valign="middle" style="color:#999999;">Copyright&copy; 2012 ZyXEL Communications Corp. All rights reserved</td>
+      </tr>
+    </table></td>
+</tr></tbody></table></body></html>
