@@ -223,7 +223,7 @@
                 <![CDATA[uploadfile/009.jpg]]>
             </小圖連結>
             <大圖連結>
-                <![CDATA[uploadfile/big001.jpg]]>
+                <![CDATA[uploadfile/big009.jpg]]>
             </大圖連結>
             <Name>
                 <![CDATA[Lamborghini]]>
@@ -249,7 +249,7 @@
                 <![CDATA[uploadfile/010.jpg]]>
             </小圖連結>
             <大圖連結>
-                <![CDATA[uploadfile/big002.jpg]]>
+                <![CDATA[uploadfile/big010.jpg]]>
             </大圖連結>
             <Name>
                 <![CDATA[W1]]>
@@ -483,7 +483,7 @@
                 <![CDATA[uploadfile/009.jpg]]>
             </小圖連結>
             <大圖連結>
-                <![CDATA[uploadfile/big001.jpg]]>
+                <![CDATA[uploadfile/big009.jpg]]>
             </大圖連結>
             <Name>
                 <![CDATA[Lamborghini]]>
@@ -509,7 +509,7 @@
                 <![CDATA[uploadfile/010.jpg]]>
             </小圖連結>
             <大圖連結>
-                <![CDATA[uploadfile/big002.jpg]]>
+                <![CDATA[uploadfile/big010.jpg]]>
             </大圖連結>
             <Name>
                 <![CDATA[W1]]>
