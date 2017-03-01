@@ -15,7 +15,7 @@
                 <![CDATA[uploadfile/001.jpg]]>
             </小圖連結>
             <大圖連結>
-                <![CDATA[uploadfile/_l_001.jpg]]>
+                <![CDATA[uploadfile/big001.jpg]]>
             </大圖連結>
             <Name>
                 <![CDATA[S6]]>
@@ -41,7 +41,7 @@
                 <![CDATA[uploadfile/002.jpg]]>
             </小圖連結>
             <大圖連結>
-                <![CDATA[uploadfile/_l_002.jpg]]>
+                <![CDATA[uploadfile/big002.jpg]]>
             </大圖連結>
             <Name>
                 <![CDATA[U1]]>
@@ -67,7 +67,7 @@
                 <![CDATA[uploadfile/003.jpg]]>
             </小圖連結>
             <大圖連結>
-                <![CDATA[uploadfile/_l_003.jpg]]>
+                <![CDATA[uploadfile/big003.jpg]]>
             </大圖連結>
             <Name>
                 <![CDATA[U1]]>
@@ -93,7 +93,7 @@
                 <![CDATA[uploadfile/004.jpg]]>
             </小圖連結>
             <大圖連結>
-                <![CDATA[uploadfile/_l_004.jpg]]>
+                <![CDATA[uploadfile/big004.jpg]]>
             </大圖連結>
             <Name>
                 <![CDATA[Lamborghini]]>
@@ -119,7 +119,7 @@
                 <![CDATA[uploadfile/005.jpg]]>
             </小圖連結>
             <大圖連結>
-                <![CDATA[uploadfile/_l_005.jpg]]>
+                <![CDATA[uploadfile/big005.jpg]]>
             </大圖連結>
             <Name>
                 <![CDATA[R2]]>
@@ -145,7 +145,7 @@
                 <![CDATA[uploadfile/006.jpg]]>
             </小圖連結>
             <大圖連結>
-                <![CDATA[uploadfile/_l_006.jpg]]>
+                <![CDATA[uploadfile/big006.jpg]]>
             </大圖連結>
             <Name>
                 <![CDATA[Ecobook]]>
@@ -171,7 +171,7 @@
                 <![CDATA[uploadfile/007.jpg]]>
             </小圖連結>
             <大圖連結>
-                <![CDATA[uploadfile/_l_007.jpg]]>
+                <![CDATA[uploadfile/big007.jpg]]>
             </大圖連結>
             <Name>
                 <![CDATA[Ecobook]]>
@@ -197,7 +197,7 @@
                 <![CDATA[uploadfile/008.jpg]]>
             </小圖連結>
             <大圖連結>
-                <![CDATA[uploadfile/_l_008.jpg]]>
+                <![CDATA[uploadfile/big008.jpg]]>
             </大圖連結>
             <Name>
                 <![CDATA[R2]]>
@@ -223,7 +223,7 @@
                 <![CDATA[uploadfile/009.jpg]]>
             </小圖連結>
             <大圖連結>
-                <![CDATA[uploadfile/_l_001.jpg]]>
+                <![CDATA[uploadfile/big001.jpg]]>
             </大圖連結>
             <Name>
                 <![CDATA[Lamborghini]]>
@@ -249,7 +249,7 @@
                 <![CDATA[uploadfile/010.jpg]]>
             </小圖連結>
             <大圖連結>
-                <![CDATA[uploadfile/_l_002.jpg]]>
+                <![CDATA[uploadfile/big002.jpg]]>
             </大圖連結>
             <Name>
                 <![CDATA[W1]]>
@@ -275,7 +275,7 @@
                 <![CDATA[uploadfile/001.jpg]]>
             </小圖連結>
             <大圖連結>
-                <![CDATA[uploadfile/_l_001.jpg]]>
+                <![CDATA[uploadfile/big001.jpg]]>
             </大圖連結>
             <Name>
                 <![CDATA[S6]]>
@@ -301,7 +301,7 @@
                 <![CDATA[uploadfile/002.jpg]]>
             </小圖連結>
             <大圖連結>
-                <![CDATA[uploadfile/_l_002.jpg]]>
+                <![CDATA[uploadfile/big002.jpg]]>
             </大圖連結>
             <Name>
                 <![CDATA[U1]]>
@@ -327,7 +327,7 @@
                 <![CDATA[uploadfile/003.jpg]]>
             </小圖連結>
             <大圖連結>
-                <![CDATA[uploadfile/_l_003.jpg]]>
+                <![CDATA[uploadfile/big003.jpg]]>
             </大圖連結>
             <Name>
                 <![CDATA[U1]]>
@@ -353,7 +353,7 @@
                 <![CDATA[uploadfile/004.jpg]]>
             </小圖連結>
             <大圖連結>
-                <![CDATA[uploadfile/_l_004.jpg]]>
+                <![CDATA[uploadfile/big004.jpg]]>
             </大圖連結>
             <Name>
                 <![CDATA[Lamborghini]]>
@@ -379,7 +379,7 @@
                 <![CDATA[uploadfile/005.jpg]]>
             </小圖連結>
             <大圖連結>
-                <![CDATA[uploadfile/_l_005.jpg]]>
+                <![CDATA[uploadfile/big005.jpg]]>
             </大圖連結>
             <Name>
                 <![CDATA[R2]]>
@@ -405,7 +405,7 @@
                 <![CDATA[uploadfile/006.jpg]]>
             </小圖連結>
             <大圖連結>
-                <![CDATA[uploadfile/_l_006.jpg]]>
+                <![CDATA[uploadfile/big006.jpg]]>
             </大圖連結>
             <Name>
                 <![CDATA[Ecobook]]>
@@ -431,7 +431,7 @@
                 <![CDATA[uploadfile/007.jpg]]>
             </小圖連結>
             <大圖連結>
-                <![CDATA[uploadfile/_l_007.jpg]]>
+                <![CDATA[uploadfile/big007.jpg]]>
             </大圖連結>
             <Name>
                 <![CDATA[Ecobook]]>
@@ -457,7 +457,7 @@
                 <![CDATA[uploadfile/008.jpg]]>
             </小圖連結>
             <大圖連結>
-                <![CDATA[uploadfile/_l_008.jpg]]>
+                <![CDATA[uploadfile/big008.jpg]]>
             </大圖連結>
             <Name>
                 <![CDATA[R2]]>
@@ -483,7 +483,7 @@
                 <![CDATA[uploadfile/009.jpg]]>
             </小圖連結>
             <大圖連結>
-                <![CDATA[uploadfile/_l_001.jpg]]>
+                <![CDATA[uploadfile/big001.jpg]]>
             </大圖連結>
             <Name>
                 <![CDATA[Lamborghini]]>
@@ -509,7 +509,7 @@
                 <![CDATA[uploadfile/010.jpg]]>
             </小圖連結>
             <大圖連結>
-                <![CDATA[uploadfile/_l_002.jpg]]>
+                <![CDATA[uploadfile/big002.jpg]]>
             </大圖連結>
             <Name>
                 <![CDATA[W1]]>
